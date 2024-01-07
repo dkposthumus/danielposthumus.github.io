@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 1"
+title: "Democratizing Truth"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+permalink: /publication/2021-democratizing-truth
+excerpt: 'Over the past half-century, numerous transitional justice (TJ) measures have been implemented globally. While much research has examined different TJ modalities in the aftermath of authoritarian rule and armed conflict, a growing body of work recognizes TJ outside of political transitions. We study a noteworthy export from transitional to non-transitional settings: truth commissions. Building on scholarship on TJ in established democracies, we introduce new quantitative data from the Varieties of Truth Commissions Project on truth commissions in an overlooked but significant case: the United States. The data captures 20 past, present and proposed official US truth commissions, most of them at the subnational level. Though their mandates vary considerably, they all address racial injustice, with an emphasis on anti-Indigenous and anti-Black violence. We elaborate on trends in the data and discuss the implications for unfolding efforts to reckon with historical and contemporary racial violence and injustice in the United States.'
+date: 2021-11-01
+venue: 'International Journal of Transitional Justice'
+paperurl: 'https://academic.oup.com/ijtj/article-abstract/15/3/510/6406461'
 citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 ---
-This paper is about the number 1. The number 2 is left for future work.
+Over the past half-century, numerous transitional justice (TJ) measures have been implemented globally. While much research has examined different TJ modalities in the aftermath of authoritarian rule and armed conflict, a growing body of work recognizes TJ outside of political transitions. We study a noteworthy export from transitional to non-transitional settings: truth commissions. Building on scholarship on TJ in established democracies, we introduce new quantitative data from the Varieties of Truth Commissions Project on truth commissions in an overlooked but significant case: the United States. The data captures 20 past, present and proposed official US truth commissions, most of them at the subnational level. Though their mandates vary considerably, they all address racial injustice, with an emphasis on anti-Indigenous and anti-Black violence. We elaborate on trends in the data and discuss the implications for unfolding efforts to reckon with historical and contemporary racial violence and injustice in the United States.
 
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
+[Download paper here](https://www.researchgate.net/publication/355439206_Democratizing_Truth_An_Analysis_of_Truth_Commissions_in_the_United_States)
 
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
+Recommended citation: Daniel Posthumus, Kelebogile Zvobgo, Democratizing Truth: An Analysis of Truth Commissions in the United States, International Journal of Transitional Justice, Volume 15, Issue 3, November 2021, Pages 510–532, https://doi.org/10.1093/ijtj/ijab029.
