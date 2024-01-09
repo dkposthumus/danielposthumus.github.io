@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* B.A., College of William & Mary, 2024
+* B.A., College of William & Mary, 2024 \
 Economics and Government Double Major
 
 Work experience
