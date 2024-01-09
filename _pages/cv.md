@@ -68,7 +68,7 @@ Skills
   * Stata
   * R
   * MATLAB
-  * Microsoft Excel
+  * Microsoft Excel <br>
 **Languages**
   * Spanish (Fluent)
   * German (Intermediate)
