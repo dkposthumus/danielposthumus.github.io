@@ -12,11 +12,17 @@ redirect_from:
 Education
 ======
 * B.A., College of William & Mary, 2024
-    Economics and Government Double Major, 
+    
+Economics and Government Double Major
 
 Work experience
 ======
-* 2020-2024: Research Fellow, International Justice Lab (Global Research Institute)
+**Research Fellow** 
+
+International Justice Lab (Global Research Institute), William & Mary
+
+2024
+
   * Co-authored a peer-reviewed article published in the International Journal of Transitional Justice, “Democratizing Truth”, introducing the first-ever comprehensive dataset of US truth commissions.
   * Presented ongoing paper “Proposing Truth” at the American Political Science Association’s (APSA) 2023 Annual Meeting.
 * Spring 2023: Intern, President's Council of Economic Advisers (CEA)
