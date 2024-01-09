@@ -40,7 +40,7 @@ Principles of Microeconomics, William & Mary Economics Department
   * Assisted Professor Ranjan Shrestha in Fall 2022 by conducting regular office hours and study sessions and proctoring exams while aiding students master the foundations of microeconomics.
   
 
-Summer 2022: **Human Rights Fellow**  \ 
+Summer 2022: **Human Rights Fellow**<br>
 La Comisión Provincial por La Memoria, La Plata, Argentina
   * Wrote biographies about the last military dictatorship’s victims in Argentina, conducting qualitative research through the Comisión’s archives and interviews.
   * Lived and worked in La Plata, Argentina, immersing myself in an entirely Spanish-language setting.
