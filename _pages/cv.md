@@ -12,15 +12,12 @@ redirect_from:
 Education
 ======
 * B.A., College of William & Mary, 2024
-    
 Economics and Government Double Major
 
 Work experience
 ======
 **Research Fellow** 
-
 International Justice Lab (Global Research Institute), William & Mary
-
 2024
 
   * Co-authored a peer-reviewed article published in the International Journal of Transitional Justice, “Democratizing Truth”, introducing the first-ever comprehensive dataset of US truth commissions.
