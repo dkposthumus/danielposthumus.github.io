@@ -6,6 +6,7 @@ excerpt: 'On the evening of Thursday, November 4, 2021, after the Iowa City Trut
 date: 2022-05-11
 venue: 'The Pulitzer Center'
 paperurl: 'https://pulitzercenter.org/stories/search-facilitator-further-delays-iowa-truth-and-reconciliation-commission'
+citation: 'Posthumus, Daniel. "Search for Facilitator Further Delays Iowa Truth and Reconciliation Commission." The Pulitzer Center. May 11, 2022. https://pulitzercenter.org/stories/search-facilitator-further-delays-iowa-truth-and-reconciliation-commission'
 ---
 On the evening of Thursday, November 4, 2021, after the Iowa City Truth and Reconciliation Commissioners filed out of their meeting in City Hall, Commission Chair Mohamed Traore spoke with community members about school outreach. He noticed two police officers approaching. He thought that they might ask him about the Commission’s work. Or that something had happened to his family. It was neither: The officers arrested Traore.
 
