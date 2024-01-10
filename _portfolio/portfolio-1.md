@@ -1,7 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "The Pass-Through of Changes in Monetary Policy to Borrowing Costs"
+excerpt: "The Federal Reserve conducts monetary policy in a variety of different ways, but the most common is by adjusting the Target Federal Funds Rate. By changing its policy rate, the Federal Reserve can change the costs of borrowing in the economy, although different interest rates respond to changes in the policy rate very differently. In order to test the pass-through of changes to the federal reserve policy rate (here we limit ourselves to conventional monetary policy making), we will engage in a three-pronged empirical approach: 1) a cross-sectional regression of changes in various borrowing costs in conjunction with the policy rate, 2) a vector auto-regressive (VAR) approach, and 3) a structural auto-regressive (SVAR) approach that borrows heavily from the work of Pe ́tursson."
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
