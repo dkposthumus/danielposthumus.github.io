@@ -6,6 +6,6 @@ collection: portfolio
 
 [Paper](https://github.com/dkposthumus/danielposthumus.github.io/blob/581213813d0900a241f2d57cbe8066b0f3921bc4/_portfolio/pass-through_2022/final_paper.pdf)
 
-Data
+[Data](https://github.com/dkposthumus/danielposthumus.github.io/tree/34bfdae58f4927741d93df5ed24076d06d3619a2/_portfolio/pass-through_2022/data)
 
-Replication Code Files:
+[Replication Do-Files](https://github.com/dkposthumus/danielposthumus.github.io/tree/34bfdae58f4927741d93df5ed24076d06d3619a2/_portfolio/pass-through_2022/code)
