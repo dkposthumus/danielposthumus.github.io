@@ -4,7 +4,7 @@ excerpt: "The Federal Reserve conducts monetary policy in a variety of different
 collection: portfolio
 ---
 
-[Paper](pass-through_2022/final_paper.pdf)
+[Paper](https://github.com/dkposthumus/danielposthumus.github.io/blob/581213813d0900a241f2d57cbe8066b0f3921bc4/_portfolio/pass-through_2022/final_paper.pdf)
 
 Data
 
