@@ -1,7 +1,7 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Human Rights Publications"
+permalink: /human_rights_publications/
 author_profile: true
 ---
 
