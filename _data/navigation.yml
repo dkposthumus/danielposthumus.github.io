@@ -1,13 +1,13 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Human Rights Publications"
+    url: /human_rights_publications/
     
-  - title: "Portfolio"
-    url: /portfolio/
+  - title: "Economics Work Samples"
+    url: /econ_work/
         
   - title: "Blog Posts"
-    url: /year-archive/
+    url: /blog/
     
   - title: "CV"
     url: /cv/
