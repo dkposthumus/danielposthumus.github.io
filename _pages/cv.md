@@ -83,12 +83,12 @@ Publications
   
 Awards and Honors
 ======
-**1693 Program Scholar**
-* Most selective academic scholarship at the College. Full room, board, and tuition for four years.
+**William & Mary 1693 Program Scholar**
+* Most selective academic scholarship at the College of William & Mary. Full room, board, and tuition for four years.
 * Received $5,000 in research funding that was used to travel to Indonesia to work as a Research Assistant with TNP2K. 
 
 **Member, Phi Beta Kappa**
-* Received the Ann Callahan Chappel Award, given to the most outstanding PBK initiate in the fall. The award includes a $12,000 scholarship.
+* Received Ann Callahan Chappel Award, given to the most outstanding William & Mary PBK initiate in the fall. The award includes a $12,000 scholarship.
 * Selected as member of Alpha Chapter of Phi Beta Kappa (PBK).
 
 **Ross L. and Marian Y. Goble Scholar**
