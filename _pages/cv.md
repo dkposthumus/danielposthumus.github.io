@@ -34,7 +34,7 @@ Spring 2023: **Intern**<br>
 Executive Office of the President, Council of Economic Advisers<br> 
 Washington, DC
   * Conducted microeconomic and macroeconomic analysis with Stata and Microsoft Excel, using datasets derived from a Bloomberg Terminal, Haver, and the Trade Data Monitor (TDM).
-  * Assisted in preparing memos focusing on international economics topics for use by Council Member. Topics of note included trade, capital markets, and monetary policy.
+  * Assisted in preparing memos focusing on international economics topics targeted to Council Member. Topics of note included trade, capital markets, and monetary policy.
   * Presented on a variety of topics in both informal and formal contexts, including the future of Japanese monetary policy and international currency markets.
 
 
