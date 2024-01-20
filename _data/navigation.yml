@@ -1,10 +1,10 @@
 # main links links
 main:
-  - title: "Human Rights Publications"
-    url: /human_rights_publications/
+  - title: "Publications"
+    url: /publications/
     
-  - title: "Economics Work Samples"
-    url: /econ_work/
+  - title: "Writing and Coding Samples"
+    url: /writing_samples/
         
   - #title: "Blog Posts"
     #url: /blog/
