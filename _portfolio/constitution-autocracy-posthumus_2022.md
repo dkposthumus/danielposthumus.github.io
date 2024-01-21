@@ -1,0 +1,12 @@
+---
+title: "Constitutional Upheavals and Autocracy in Southeast Asia"
+excerpt: "The foundation for any modern nation-state is a written constitution. The emergence of constitutionalism as a legal doctrine in the Enlightenment period was one of the crucial developments necessary for the growth of democracy and decline of absolutism. A constitution is merely the means by which a state constitutes and specifies the limits of legislative power, executive power, and judicial power. This turn towards limiting these powers (which began with the Magna Carta and the English Glorious Revolution) marked a turn away from absolutism— although plenty of non-democracies have employed constitutions.1 It is thus now commonly accepted that constitutions form the bedrock of government, autocracy and democracy."
+collection: portfolio
+---
+The foundation for any modern nation-state is a written constitution. The emergence of constitutionalism as a legal doctrine in the Enlightenment period was one of the crucial developments necessary for the growth of democracy and decline of absolutism. A constitution is merely the means by which a state constitutes and specifies the limits of legislative power, executive power, and judicial power. This turn towards limiting these powers (which began with the Magna Carta and the English Glorious Revolution) marked a turn away from absolutism— although plenty of non-democracies have employed constitutions.1 It is thus now commonly accepted that constitutions form the bedrock of government, autocracy and democracy.
+
+In this essay, the author will apply these ideas to a region of the world heavily tilted towards authoritarianism but with a tremendous diversity in regime type: Southeast Asia. How do new constitutions and significant constitutional upheavals affect levels of autocracy in Southeast Asian nations? Does it matter the context of these major constitutional changes?
+
+[Paper](https://github.com/dkposthumus/danielposthumus.github.io/tree/9a1873890d1bb3cbe58783e55c2262b63d7d8c07/_portfolio/constitution-autocracy-posthumus_2022)
+
+*Note: This project was initially completed as an independent final paper for my Government Senior Seminar course, Democracy and Autocracy in SE Asia. An abridged version of this paper was published in the Fall 2022 edition of* The Monitor, *William & Mary's Journal of International Studies.*
