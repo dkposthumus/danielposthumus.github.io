@@ -7,6 +7,6 @@ The foundation for any modern nation-state is a written constitution. The emerge
 
 In this essay, the author will apply these ideas to a region of the world heavily tilted towards authoritarianism but with a tremendous diversity in regime type: Southeast Asia. How do new constitutions and significant constitutional upheavals affect levels of autocracy in Southeast Asian nations? Does it matter the context of these major constitutional changes?
 
-[Paper](https://github.com/dkposthumus/danielposthumus.github.io/tree/9a1873890d1bb3cbe58783e55c2262b63d7d8c07/_portfolio/constitution-autocracy-posthumus_2022)
+[Paper](https://github.com/dkposthumus/danielposthumus.github.io/blob/68f00117ea038c724870a2d291d7bea1c9fab0b2/_portfolio/constitution-autocracy-posthumus_2022/constitution_autocracy_posthumus.pdf)
 
-*Note: This project was initially completed as an independent final paper for my Government Senior Seminar course, Democracy and Autocracy in SE Asia. An abridged version of this paper was published in the Fall 2022 edition of* The Monitor, *William & Mary's Journal of International Studies.*
+*Note: This project was initially completed as an independent final paper for my Government Senior Seminar, "Democracy and Autocracy in SE Asia" with Professor S.P. Harish. An abridged version of this paper was published in the Fall 2022 edition of* The Monitor, *William & Mary's Journal of International Studies.*
