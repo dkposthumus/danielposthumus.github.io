@@ -1,3 +1,5 @@
+\def \graphics #1{/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/graphics/#1}
+
 \documentclass[12pt,final]{article}
 \usepackage[paperwidth=8.5in,left=0.5in,right=0.5in,top=1.0in,
             bottom=1.0in,paperheight=11.0in]{geometry}
@@ -22,7 +24,7 @@
 \makeatletter
 \graphicspath{{figs/}}
 \def\input@path{{tabs/}}
-\def\bibfname{paper_bib.bib}
+\def\bibfname{pass-through_2024.bib}
 \makeatother
 
 \title{The Pass-Through of Changes in Monetary Policy to Borrowing Costs}
@@ -102,9 +104,9 @@ Given the ranges of our data, we use a sample of the above time-series beginning
 	\item We have constructed real measures of borrowing costs, by subtracting the monthly core PCE inflation from each month's observation of the borrowing cost.
 	\item We have constructed the spreads of each borrowing costs against the 10-year Treasury Bond yield (which is often seen as the risk-free rate), simply by subtracting the 10-year yield from each borrowing cost. 
 \end{itemize} } Now let's begin with a quick descriptive look at the data. From a cross-sectional perspective, clearly there is a strong positive correlation between the various measuring of borrowing costs, as the below matrix scatterplot graph shows us. However, the scatterplot shows that the strength of this correlation varies between relationships, although it does appear to be positive for all relationships. Next, we want to portray these relationships by drawing their time-series, as shown in the below graph. Clearly it appears that these rates move together. We can also observe that for these time-series are not stationary, or temporally homogenous. There is a clear downward trend of borrowing costs, independent of changes in the federal funds rate (represented by the shadow federal funds rate in the graph). \\
-	\includegraphics[width=3.75in]{matrix_graph.png} \includegraphics[width=3.75in]{all_rates.png}  \\
+	\includegraphics[width=3.75in]{\graphics{matrix_graph.png}} \includegraphics[width=3.75in]{\graphics{all_rates.png}}  \\
 What if we de-trend the data from; specifically, creating a basic linear trend for each variable and then subtracting the value predicted by that linear trend from each observed value? Our data now appears nearly temporally homogenous, and we can see that the other borrowing costs follow more closely changes in the Shadow Federal Funds Rate. We have also plotted a graph showing the shocks from the Acosta paper, specifically the target rate shocks and the rate path shocks; we can see that not all changes in the shadow federal funds rate are accompanied by shocks, helping us to conceptualize the distinguish between surprise and non-surprise monetary policy changes. \\
-	\includegraphics[width=3.75in]{detrend.png} \includegraphics[width=3.75in]{shocks_time.png} \\
+	\includegraphics[width=3.75in]{\graphics{detrend.png}} \includegraphics[width=3.75in]{\graphics{shocks_time.png}} \\
 
 \section{Basic Regression Analysis}
 Beginning with a cross-sectional approach, let's look at our basic regression results: \footnote{The macro conditions controlled for in the regressions denoted as such are core PCE inflation, the labor force participation rate, home ownership rate in the United States, real GDP growth, the unemployment rate, and the VIX index. \\ 
@@ -116,7 +118,7 @@ The de-trended data is merely the linear trend of each variable subtracted from 
 \end{gather}
 where $y_t$ is our borrowing cost of interest, $MP$ is the monetary policy dependent variable (which varies by specification).
 \end{comment}
-\input{reg_table.tex} \\
+\input{\graphics{reg_table.tex}} \\
 Clearly, there is a strong positive correlation between the Shadow Rate and other borrowing costs, with or without macroeconomic controls (although the relationship does appear to become weaker when macroeconomic controls are included): all coefficients are positive and statistically significant except for the corporate bond detrended data with macro controls, unsurprising given that this rate appeared to be more independent of monetary policy in the above time-series graphs.
 
 The regressions using first-differences of our outcome variables as the dependent variables and the monetary policy shock variables as the independent variables are more mixed; for news shocks and path shocks (which are highly correlated) we see similar, positive correlation, while the target and expected federal funds rates shocks show completely mixed results, with none statistically significant.
@@ -126,20 +128,20 @@ While interesting and important, these results are clearly limited in the conclu
 \section{Structural Vector Auto Regression}
 \subsection{Model Restrictions Identification}
 In this paper, we will be using a Structural Vector Auto Regressive (SVAR) approach, as employed by Pétursson \citep{Petursson2001}. Following their lead, we divide the US financial system into four sub-markets, in order to create a set of variables representing our information set. Just as Pétursson does, we select the following time-series. First, for the policy rate set by the Fed, we will use the target federal funds rate, $r_t$, since this variable represents \textit{exactly} the policy rate of the Federal Reserve, unlike the effective federal funds rate and the shadow rate we used before. Second, there is the money market, for which we will also use the three month treasury bill rate, $m_t$. Third, to capture the bond market, we will use the market yield on a five-year US government bond, $g_t$.\footnote{Pétursson uses an indexed security; while he writes that in Iceland, his subject of study, 86\% of the total market value of government bonds were indexed, in the US inflation-indexed bonds make up only about 10\% of total marketable debt. \citep{Campbell2009}} Fourth and finally, to represent the sub-market of bank loans, we have selected the finance rate on personal loans at commercial banks for a 24-month loan, $b_t$. Below is a graph of all four of these time-series, as well as a graph of the de-trended (using the same linear de-trending process as above) series: \\
-\includegraphics[width=3.75in]{svar_intro.png} \includegraphics[width=3.75in]{svar_detrend.png} \\
+\includegraphics[width=3.75in]{\graphics{svar_intro.png}} \includegraphics[width=3.75in]{\graphics{svar_detrend.png}} \\
 We are using the same sample as our regression analysis, running from January, 1995 to September, 2022. We follow the work of Bernanke and Blinder (1992) in identifying monetary policy shocks, given by $\epsilon_{rt}$ as innovations to the target federal funds rate equation in the VAR model. \citep{Bernanke1990} Therefore to calculate innovations for each rate of interest, we merely construct a univariate auto-regressive model on their first-difference (to resolve the problem of stationarity), with lags determined by lag specification tests (whose results are reported in the Appendix). We then take the residual between the predicted value of the change in the rate for a given month and the observed one, resulting in the time-series seen below:  \\
-\includegraphics[width=3.75in]{shock_tsline.png} \includegraphics[width=3.75in]{shock_obs.png} \\
+\includegraphics[width=3.75in]{\graphics{shock_tsline.png}} \includegraphics[width=3.75in]{\graphics{shock_obs.png}} \\
 Although very noisy, we can see clear trends emerge. First, the bank loan data suffers the least variance of the four series, which confirms our intuition after seeing its de-trended time series plotted above. Next, looking at the scatter plot for the federal funds shock, we can clearly see the Zero Lower Bound, the drastic rate shocks immediately prior to the ZLB, post-COVID, and with the recent rate hikes--all differentiated from the more `routine' rate changes at other times (which may still be characterized by `shocks', but certainly at a lesser magnitude).
 
 \subsection{Basic VAR Estimation}
 Before proceeding to our structural VAR estimation, let's begin with a basic VAR of the first-difference in detrended rates. To estimate VAR, we must first find the most appropriate lag order for the VAR, which we will do using a sequence of likelihood ratio (LR) tests of the significance of each lag, shown here:
-\input{var_specification.tex} \\
+\input{\graphics{var_specification.tex}} \\
 Although the specification test results are mixed, the 3rd lag appears optimal. First, let's look at our auto-correlation plots: \\
-\includegraphics[width=3.75in]{var_ac.png} \includegraphics[width=3.75in]{var_ac_diff.png} \\
+\includegraphics[width=3.75in]{\graphics{var_ac.png}} \includegraphics[width=3.75in]{\graphics{var_ac_diff.png}} \\
 Clearly, there is too great of a deal of auto-correlation in the non-differenced data to effectively employ it in a VAR model, so we will proceed with the first-difference series, whose auto-correlations are plotted on the right and are much less serially correlated, if at all (certainly they don't seem so in the case of the 5-Year Bond and the Bank Loan series). Let's also check the results of a Dickey-Fuller Stationarity Test: \\
-\input{stationarity_test.tex} \\
+\input{\graphics{stationarity_test.tex}} \\
 We have achieved some measure of stationarity with the first-difference de-trended data as well as the shock data (we're able to reject the null hypothesis of the series having a `drift' for all 1st-difference and shock series, with p-values of 0.00); as stationarity is required, we're going to use the first-difference to run a basic VAR model that results in the following cumulative impulse response function graphs: \\
-\includegraphics[width=5in]{var_basic.png} \\
+\includegraphics[width=5in]{\graphics{var_basic.png}} \\
 As we would expect, there is a positive cumulative impulse response to changes across borrowing costs, with the sole exception of the 5-year Treasury Bond's response to the federal funds rate. We can also observe that the bank loan rate has by far the weakest response to shocks in other variables. In particular, as we would expect, the 3-month T-Bill is the most response to impulses from the federal funds rate, with the 5-year T-Bond being a little behind. This invites us to conduct a more rigorous analysis with a structural model.
 
 \subsection{Structural Model Derivation}
@@ -166,18 +168,16 @@ where the coefficients in $A_0$ match those we defined in our linear model. The 
 
 \subsection{Reduced-Form Estimation}
 To estimate our reduced-form model, which is as far as we will go in this paper, we estimate the coefficients in the matrix $A_0$ through the use of a dynamic factor model with the constraint of its coefficients following a Wold Causal Chain structure. This estimation leads us to the below estimated coefficients (in Table 5).
-\input{wold_estimates_shocks.tex} \\
+\input{\graphics{wold_estimates_shocks.tex}} \\
 We see very strong statistically significant coefficients, largely with positive signs (which we would expect). We do want to note, however, that while all variables of interest appear to have significant positive relationships with shocks to the federal funds rate, there is no such consistency in the estimation of the relationships \textit{between} borrowing costs and interest rates, which exhibit much more muddled significance. Of particular note is the weak relationship between the bank loans and 5-year bond; instead, our results suggest, the bank loan market appears most reactive to the money market (represented by the 3-month bond) and the Federal Reserve's policy rate.
 
 The estimation of the structural VAR with such restriction yields the following cumulative impulse response function graph: \\
-\includegraphics[width=5in]{irf_svar_shock.png} \\
+\includegraphics[width=5in]{\graphics{irf_svar_shock.png}} \\
 The results are, again, what we would expect: there is a mostly positive relationship across the board when we look at the money and bond markets. We are particularly satisfied by seeing the 3-month and 5-year bonds following our exactly-predicted relationship. The bank loan market, however, seems to be the albatross, exhibiting a near-flat relationship with the federal funds impulse, a negative relationship with the 3-month impulse, and another near-flat relationship with the 5-year impulse. Perhaps this confusion is due to our selection of rate; it was difficult to find a bank loan rate that matched the rate Pétursson employed, and perhaps the finance rate on personal loans at commercial banks for a 24-month loan is \textit{not} effectively capturing the dynamics of the loan market.
 
 Our results are similar to that of Pétursson; however, we want to note that Pétursson went beyond estimating the coefficients in his reduced-form model; he then estimates the over-identified system, incorporating complications and non-linearities in the reaction of the bank loan rate to shocks in other interest rates. He also engages in deep testing of his identifying assumptions, which we don't do. These areas would prove to be rich extensions of our research. 
 
 \section{Conclusion}
-
-
 
 We also went beyond a basic descriptive and cross-sectional approach, creating a structural VAR model to examine and test the impulse of the federal funds policy shocks--generated through its own VAR process--on shocks in sub-market rates. Overall, these findings matched our cross-sectional empirical findings, i.e., that the money and bond markets followed more closely monetary policy, while there was more disconnect between other segments of the financial system--such as housing, corporate bonds, and bank loaning. We look forward to extending this research with more robustness checks, continuing to flesh out our structural model through greater specification and identification tests (in particular mirroring Pétursson's work on over-identifying assumptions), and finally by incorporating dynamic term structural modeling (DTSM) that decompose and more closely analyze the term structure of the bonds that seem to be reacting so strongly to shocks in the federal funds rate. Finally, we would also be interested in extending this work to the Zero Lower Bound, and the Quantitative Easing (QE) programs the Federal Reserve engaged in during and in the wake of the Great Recession.
 
@@ -189,12 +189,12 @@ We also went beyond a basic descriptive and cross-sectional approach, creating a
 \section{Appendix}
 \subsection{VAR Estimations for Shocks}
 The data on shocks for each respective rate is calculated using a basic VAR model and then subtracting the predicted values from the observed ones. Below are the tests for lag specification for each of the four rates of interest:
-\input{_3_month_test.tex}
-\input{_5_yr_test.tex}
-\input{bank_loan_test.tex}
-\input{fed_funds_test.tex} \\
+\input{\graphics{_3_month_test.tex}}
+\input{\graphics{_5_yr_test.tex}}
+\input{\graphics{bank_loan_test.tex}}
+\input{\graphics{fed_funds_test.tex}} \\
 In accordance with these results, we selected a lag of 3 for the 3-Month, 1 for the 5-Year, 3 for the bank loans, and 3 for the federal funds when running their univariate regressions. It may also be interesting and instructive to compare our estimates of monetary policy shocks to those of \citep{Acosta2022}: \\
-\includegraphics[width=5in]{shock_comparison.png}
+\includegraphics[width=5in]{\graphics{shock_comparison.png}}
 
 \subsection{Péturrson's Derivation of the Wold Causal Chain}
 In the main body of the paper, we largely skipped over how Pétursson derives the Wold Causal Chain that's used to estimate the structural VAR model. Below is a brief description summarizing his derivation of the SVAR model in his paper: we begin by creating a vector $x_t$ of our four variables of interest: $r_t$, $m_t$, $g_t$, and $b_t$. The VAR model is constructed of the following equations:

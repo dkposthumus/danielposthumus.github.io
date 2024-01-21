@@ -17,10 +17,10 @@ set linesize 80
 macro drop _all
 
 *******************************************************************************************Set Global Macros              *******************************************************************************************
-global project "~/danielposthumus.github.io/_portfolio/pass-through_2022"
-global code "$project/code"
+global project "~/danielposthumus.github.io/_portfolio/pass-through_2024"
+	global code "$project/code"
 	global data "$project/data"
-		global output "$project"
+	global output "$project/graphics"
 *******************************************************************************************Create basic time-series graphs for OLS analysis         *******************************************************************************************
 cd $data 
 use master_daily, clear

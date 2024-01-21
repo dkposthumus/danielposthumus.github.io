@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.4)  21 JAN 2024 09:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.4)  21 JAN 2024 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**final_paper.tex
-(./final_paper.tex
+**pass-through_2024.tex
+(./pass-through_2024.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -189,9 +189,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip50
 )
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 6.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 6.
-Package hyperref Info: Option `colorlinks' set `true' on input line 6.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 8.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 8.
+Package hyperref Info: Option `colorlinks' set `true' on input line 8.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
@@ -396,7 +396,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 
 Excluding comment 'comment')
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-2.
+4.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -406,27 +406,27 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
 \l__pdf_internal_box=\box56
 )
-(./final_paper.aux)
-\openout1 = `final_paper.aux'.
+(./pass-through_2024.aux)
+\openout1 = `pass-through_2024.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -470,7 +470,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 34.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -484,12 +484,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
- (./final_paper.out) (./final_paper.out)
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
+ (./pass-through_2024.out) (./pass-through_2024.out)
 \@outlinefile=\write4
-\openout4 = `final_paper.out'.
+\openout4 = `pass-through_2024.out'.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -516,13 +516,13 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 37.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -531,7 +531,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-7.
+9.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -539,142 +539,220 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<matrix_graph.png, id=106, 702.625pt x 510.90875pt>
-File: matrix_graph.png Graphic file (type png)
-<use matrix_graph.png>
-Package pdftex.def Info: matrix_graph.png  used on input line 105.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/matrix_graph.png, id=106, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/matrix_graph.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/matrix_graph.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/matrix_graph.png  used on input line 107.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<all_rates.png, id=107, 702.625pt x 510.90875pt>
-File: all_rates.png Graphic file (type png)
-<use all_rates.png>
-Package pdftex.def Info: all_rates.png  used on input line 105.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/all_rates.png, id=107, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/all_rates.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/all_rates.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/all_rates.png  used on input line 107.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<detrend.png, id=108, 702.625pt x 510.90875pt>
-File: detrend.png Graphic file (type png)
-<use detrend.png>
-Package pdftex.def Info: detrend.png  used on input line 107.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/detrend.png, id=108, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/detrend.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/detrend.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/detrend.png  used on input line 109.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<shocks_time.png, id=109, 702.625pt x 510.90875pt>
-File: shocks_time.png Graphic file (type png)
-<use shocks_time.png>
-Package pdftex.def Info: shocks_time.png  used on input line 107.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/shocks_time.png, id=109, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/shocks_time.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/shocks_time.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/shocks_time.png  used on input line 109.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 96--108
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 98--110
 [] [] 
  []
 
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 96--108
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 98--110
 [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--108
+Underfull \hbox (badness 10000) in paragraph at lines 98--110
 
  []
 
-[2] [3 <./matrix_graph.png> <./all_rates.png>] Excluding 'comment' comment.
-(./reg_table.tex)
+[2] [3 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-throug
+h_2024/graphics/matrix_graph.png> </Users/danielposthumus/danielposthumus.githu
+b.io/_portfolio/pass-through_2024/graphics/all_rates.png>]
+Excluding 'comment' comment.
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/reg_table.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[4 <./detrend.png> <./shocks_time.png>] [5]
-<svar_intro.png, id=147, 702.625pt x 510.90875pt>
-File: svar_intro.png Graphic file (type png)
-<use svar_intro.png>
-Package pdftex.def Info: svar_intro.png  used on input line 129.
+[4 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_20
+24/graphics/detrend.png> </Users/danielposthumus/danielposthumus.github.io/_por
+tfolio/pass-through_2024/graphics/shocks_time.png>] [5]
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/svar_intro.png, id=147, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/svar_intro.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/svar_intro.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/svar_intro.png  used on input line 131.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<svar_detrend.png, id=148, 702.625pt x 510.90875pt>
-File: svar_detrend.png Graphic file (type png)
-<use svar_detrend.png>
-Package pdftex.def Info: svar_detrend.png  used on input line 129.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/svar_detrend.png, id=148, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/svar_detrend.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/svar_detrend.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/svar_detrend.png  used on input line 131.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<shock_tsline.png, id=151, 702.625pt x 510.90875pt>
-File: shock_tsline.png Graphic file (type png)
-<use shock_tsline.png>
-Package pdftex.def Info: shock_tsline.png  used on input line 131.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/shock_tsline.png, id=151, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/shock_tsline.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/shock_tsline.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/shock_tsline.png  used on input line 133.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<shock_obs.png, id=152, 702.625pt x 510.90875pt>
-File: shock_obs.png Graphic file (type png)
-<use shock_obs.png>
-Package pdftex.def Info: shock_obs.png  used on input line 131.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/shock_obs.png, id=152, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/shock_obs.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/shock_obs.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/shock_obs.png  used on input line 133.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 128--133
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 130--135
 [] [] 
  []
 
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 128--133
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 130--135
 [] [] 
  []
 
-[6 <./svar_intro.png> <./svar_detrend.png>] (./var_specification.tex)
-<var_ac.png, id=162, 702.625pt x 510.90875pt>
-File: var_ac.png Graphic file (type png)
-<use var_ac.png>
-Package pdftex.def Info: var_ac.png  used on input line 138.
+[6 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_20
+24/graphics/svar_intro.png> </Users/danielposthumus/danielposthumus.github.io/_
+portfolio/pass-through_2024/graphics/svar_detrend.png>]
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/var_specification.tex)
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/var_ac.png, id=162, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/var_ac.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/var_ac.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/var_ac.png  used on input line 140.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<var_ac_diff.png, id=163, 702.625pt x 510.90875pt>
-File: var_ac_diff.png Graphic file (type png)
-<use var_ac_diff.png>
-Package pdftex.def Info: var_ac_diff.png  used on input line 138.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/var_ac_diff.png, id=163, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/var_ac_diff.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/var_ac_diff.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/var_ac_diff.png  used on input line 140.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
 
-(./stationarity_test.tex)
-<var_basic.png, id=164, 702.625pt x 510.90875pt>
-File: var_basic.png Graphic file (type png)
-<use var_basic.png>
-Package pdftex.def Info: var_basic.png  used on input line 142.
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/stationarity_test.tex)
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/var_basic.png, id=164, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/var_basic.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/var_basic.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/var_basic.png  used on input line 144.
 (pdftex.def)             Requested size: 361.34999pt x 262.75844pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 135--144
+Overfull \hbox (2.28001pt too wide) in paragraph at lines 137--146
 [] [] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <./shock_tsline.png> <./shock_obs.png>]
+[7 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_20
+24/graphics/shock_tsline.png> </Users/danielposthumus/danielposthumus.github.io
+/_portfolio/pass-through_2024/graphics/shock_obs.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./var_ac.png> <./var_ac_diff.png>] [9 <./var_basic.png>] [10]
-(./wold_estimates_shocks.tex)
+[8 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_20
+24/graphics/var_ac.png> </Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/var_ac_diff.png>] [9 </Users/danielposthumus/d
+anielposthumus.github.io/_portfolio/pass-through_2024/graphics/var_basic.png>]
+[10]
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/wold_estimates_shocks.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<irf_svar_shock.png, id=198, 702.625pt x 510.90875pt>
-File: irf_svar_shock.png Graphic file (type png)
-<use irf_svar_shock.png>
-Package pdftex.def Info: irf_svar_shock.png  used on input line 173.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/irf_svar_shock.png, id=198, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/irf_svar_shock.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/irf_svar_shock.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/irf_svar_shock.png  used on input line 175.
 (pdftex.def)             Requested size: 361.34999pt x 262.75844pt.
-[11] [12 <./irf_svar_shock.png>] [13] (./final_paper.bbl) [14
+[11] [12 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-thro
+ugh_2024/graphics/irf_svar_shock.png>] [13] (./pass-through_2024.bbl) [14
 
 ]
-(./_3_month_test.tex) (./_5_yr_test.tex) (./bank_loan_test.tex)
-(./fed_funds_test.tex)
-<shock_comparison.png, id=224, 702.625pt x 510.90875pt>
-File: shock_comparison.png Graphic file (type png)
-<use shock_comparison.png>
-Package pdftex.def Info: shock_comparison.png  used on input line 197.
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/_3_month_test.tex)
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/_5_yr_test.tex)
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/bank_loan_test.tex)
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/fed_funds_test.tex)
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/shock_comparison.png, id=224, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
+2024/graphics/shock_comparison.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
+024/graphics/shock_comparison.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/pass-through_2024/graphics/shock_comparison.png  used on input line 197.
 (pdftex.def)             Requested size: 361.34999pt x 262.75844pt.
  [15
 
-] [16 <./shock_comparison.png>] [17]
-(./final_paper.aux)
-Package rerunfilecheck Info: File `final_paper.out' has not changed.
+] [16 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through
+_2024/graphics/shock_comparison.png>] [17]
+(./pass-through_2024.aux)
+Package rerunfilecheck Info: File `pass-through_2024.out' has not changed.
 (rerunfilecheck)             Checksum: 0F4E3C053831EE0C1CF0AD8655D848D9;2633.
  ) 
 Here is how much of TeX's memory you used:
- 13163 strings out of 478268
- 212536 string characters out of 5846348
- 514071 words of memory out of 5000000
- 31076 multiletter control sequences out of 15000+600000
+ 13164 strings out of 478268
+ 222303 string characters out of 5846348
+ 514206 words of memory out of 5000000
+ 31077 multiletter control sequences out of 15000+600000
  499541 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,63p,1442b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,14n,63p,1448b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
 , replaced by a fixed one
@@ -713,7 +791,7 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on final_paper.pdf (17 pages, 1819144 bytes).
+Output written on pass-through_2024.pdf (17 pages, 1819144 bytes).
 PDF statistics:
  318 PDF objects out of 1000 (max. 8388607)
  257 compressed objects within 3 object streams
