@@ -11,4 +11,4 @@ The Federal Reserve conducts monetary policy in a variety of different ways, but
 
 [Replication Do-Files](https://github.com/dkposthumus/danielposthumus.github.io/tree/34bfdae58f4927741d93df5ed24076d06d3619a2/_portfolio/pass-through_2022/code)
 
-*Note: This project was initially a group project completed for an undergraduate economics course "Capital Markets" with Professor Zhao Han. I have replaced all work completed by my groupmates with my own, and kept the part of the initial project that I completed by myself.*
+*Note: This project was initially a group project (my group members were Joseph Sleeper, Ellie Wess, and Vernal Crosley) completed for an undergraduate economics course "Capital Markets" with Professor Zhao Han. I have replaced all work completed by my groupmates with my own, and kept the part of the initial project that I completed by myself.*
