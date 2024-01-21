@@ -1,0 +1,53 @@
+\begin{thebibliography}{9}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[\protect\citeauthoryear{Acosta}{Acosta}{2022}]{Acosta2022}
+\textsc{Acosta, M.} (2022): \enquote{The perceived causes of monetary policy
+  surprises,} \emph{Published Manuscript}.
+
+\bibitem[\protect\citeauthoryear{Bernanke}{Bernanke}{1990}]{Bernanke1990}
+\textsc{Bernanke, B.~S.} (1990): \enquote{The federal funds rate and the
+  channels of monetary transnission,} .
+
+\bibitem[\protect\citeauthoryear{Bernanke and Gertler}{Bernanke and
+  Gertler}{1995}]{Bernanke1995}
+\textsc{Bernanke, B.~S. and M.~Gertler} (1995): \enquote{Inside the black box:
+  the credit channel of monetary policy transmission,} \emph{Journal of
+  Economic perspectives}, 9, 27--48.
+
+\bibitem[\protect\citeauthoryear{Campbell, Shiller, and Viceira}{Campbell
+  et~al.}{2009}]{Campbell2009}
+\textsc{Campbell, J.~Y., R.~J. Shiller, and L.~M. Viceira} (2009):
+  \enquote{Understanding inflation-indexed bond markets,} Tech. rep.
+
+\bibitem[\protect\citeauthoryear{Gürkaynak, Sack, and Swanson}{Gürkaynak
+  et~al.}{2005}]{Guerkaynak2005}
+\textsc{Gürkaynak, R.~S., B.~Sack, and E.~Swanson} (2005): \enquote{The
+  Sensitivity of Long-Term Interest Rates to Economic News: Evidence and
+  Implications for Macroeconomic Models,} \emph{American Economic Review}, 95,
+  425--436.
+
+\bibitem[\protect\citeauthoryear{Kim, Wright et~al.}{Kim
+  et~al.}{2005}]{Kim2005}
+\textsc{Kim, D.~H., J.~H. Wright, et~al.} (2005): \enquote{An arbitrage-free
+  three-factor term structure model and the recent behavior of long-term yields
+  and distant-horizon forward rates,} \emph{Finance and Economics Discussion
+  Series}.
+
+\bibitem[\protect\citeauthoryear{Nakamura and Steinsson}{Nakamura and
+  Steinsson}{2018}]{Nakamura2018}
+\textsc{Nakamura, E. and J.~Steinsson} (2018): \enquote{{High-Frequency
+  Identification of Monetary Non-Neutrality: The Information Effect*},}
+  \emph{The Quarterly Journal of Economics}, 133, 1283--1330.
+
+\bibitem[\protect\citeauthoryear{P{\'e}tursson}{P{\'e}tursson}{2001}]{Petursson2001}
+\textsc{P{\'e}tursson, T.~G.} (2001): \enquote{The transmission mechanism of
+  monetary policy,} \emph{Monetary Bulletin}, 4, 62--77.
+
+\bibitem[\protect\citeauthoryear{Wu and Xia}{Wu and Xia}{2016}]{Wu2016}
+\textsc{Wu, J.~C. and F.~D. Xia} (2016): \enquote{Measuring the macroeconomic
+  impact of monetary policy at the zero lower bound,} \emph{Journal of Money,
+  Credit and Banking}, 48, 253--291.
+
+\end{thebibliography}

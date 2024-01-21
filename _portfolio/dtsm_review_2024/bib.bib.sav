@@ -1,0 +1,93 @@
+@Article{Duffee2012,
+  author    = {Duffee, Gregory R and Stanton, Richard H},
+  journal   = {The Quarterly Journal of Finance},
+  title     = {Estimation of dynamic term structure models},
+  year      = {2012},
+  number    = {02},
+  pages     = {1250008},
+  volume    = {2},
+  publisher = {World Scientific},
+}
+
+@Article{Bauer2014,
+  author  = {Bauer, Michael and Rudebusch, Glenn D},
+  journal = {International Journal of Central Banking},
+  title   = {The signaling channel for Federal Reserve bond purchases},
+  year    = {2014},
+}
+
+@Article{Kim2005,
+  author    = {Kim, Don H and Wright, Jonathan H},
+  title     = {An arbitrage-free three-factor term structure model and the recent behavior of long-term yields and distant-horizon forward rates},
+  year      = {2005},
+  publisher = {FEDS Working Paper},
+}
+
+@Article{Kim2012,
+  author    = {Kim, Don H and Orphanides, Athanasios},
+  journal   = {Journal of Financial and Quantitative Analysis},
+  title     = {Term structure estimation with survey data on interest rate forecasts},
+  year      = {2012},
+  number    = {1},
+  pages     = {241--272},
+  volume    = {47},
+  publisher = {Cambridge University Press},
+}
+
+@Article{Duffee2002,
+  author    = {Duffee, Gregory R},
+  journal   = {The Journal of Finance},
+  title     = {Term premia and interest rate forecasts in affine models},
+  year      = {2002},
+  number    = {1},
+  pages     = {405--443},
+  volume    = {57},
+  publisher = {Wiley Online Library},
+}
+
+@Article{Bollerslev1992,
+  author    = {Bollerslev, Tim and Wooldridge, Jeffrey M},
+  journal   = {Econometric reviews},
+  title     = {Quasi-maximum likelihood estimation and inference in dynamic models with time-varying covariances},
+  year      = {1992},
+  number    = {2},
+  pages     = {143--172},
+  volume    = {11},
+  publisher = {Taylor \& Francis},
+}
+
+@Article{Maller2009,
+  author    = {Maller, Ross A and M{\"u}ller, Gernot and Szimayer, Alex},
+  journal   = {Handbook of financial time series},
+  title     = {Ornstein--Uhlenbeck processes and extensions},
+  year      = {2009},
+  pages     = {421--437},
+  publisher = {Springer},
+}
+
+@Article{Welch1995,
+  author    = {Welch, Greg and Bishop, Gary and others},
+  title     = {An introduction to the Kalman filter},
+  year      = {1995},
+  publisher = {Chapel Hill, NC, USA},
+}
+
+@Misc{fred_10,
+  author       = {US Board of Governors of the Federal Reserve System},
+  howpublished = {Retrieved from FRED, Federal Reserve Bank of St. Louis; https://fred.stlouisfed.org/series/THREEFYTP10},
+  title        = {Term Premium on a 10 Year Zero Coupon Bond [THREEFYTP10]},
+  year         = {2023},
+}
+
+@Article{Gagnon2011,
+  author    = {Gagnon, Joseph and Raskin, Matthew and Remache, Julie and Sack, Brian},
+  journal   = {International Journal of Central Banking},
+  title     = {The financial market effects of the Federal Reserve’s large-scale asset purchases},
+  year      = {2011},
+  number    = {1},
+  pages     = {45--52},
+  volume    = {7},
+  publisher = {Citeseer},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

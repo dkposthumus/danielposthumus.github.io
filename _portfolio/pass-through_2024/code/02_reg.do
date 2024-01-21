@@ -186,7 +186,10 @@ esttab using "$output/real_reg_shadow.tex", ar2 replace width(\hsize) booktabs
 esttab using "$output/real_reg_shadow.rtf", not ar2 replace
 eststo clear
 
-
+/*
+log close
+exit
+*/
 
 
 

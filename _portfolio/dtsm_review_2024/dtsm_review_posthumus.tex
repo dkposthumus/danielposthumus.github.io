@@ -1,0 +1,165 @@
+\def \graphics #1{/Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_2023/graphics/#1}
+
+\documentclass[12pt,final]{article}
+\usepackage[paperwidth=8.5in,left=1.0in,right=1.0in,top=1.0in,
+            bottom=1.0in,paperheight=11.0in]{geometry}
+\usepackage{enumitem}
+\usepackage[breaklinks]{hyperref}
+\hypersetup{pdfdisplaydoctitle=true,bookmarksnumbered=true,colorlinks=true,citecolor=black,linkcolor=blue,urlcolor=red,pdfstartview=FitH,pdfpagemode=UseNone}
+\usepackage[sort&compress]{natbib}
+
+\usepackage[nodisplayskipstretch]{setspace}
+\doublespacing
+\usepackage{times}
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[labelsep=colon,small,singlelinecheck=off]{caption}
+\usepackage[font+=small]{subcaption}
+\usepackage{booktabs}
+\usepackage{comment}
+
+\makeatletter
+\graphicspath{{figs/}}
+\def\input@path{{tabs/}}
+\def\bibfname{bib.bib}
+\makeatother
+
+\title{Bond Yield Decomposition - Dynamic Term Structural Models (DTSM), Approaches and Challenges}
+\author{Daniel Posthumus}
+\date{2024}
+
+\begin{document}
+\vspace{-2in}
+\maketitle
+\vspace{-0.75in}
+\section{Introduction}
+
+In the wake of the Great Financial Crisis (GFC), the world entered a period of disinflation and stagnant growth as central banks desperately cut interest rates to zero, hitting the zero lower bound (ZLB) in their efforts to jump-start the economy. Without the ability to use conventional loosening monetary policy tools, the Federal Reserve resorted to novel monetary policies--most famously quantitative easing (QE), first employed by the Japanese in the face of their own deflationary period. 
+
+The exact effects of quantitative easing are debated; in particular, the transmission channels through which QE worked is a subject of great debate in the literature for years after the GFC. The research question I have focused on this semester is the one that Rudebusch and Bauer (2014) tried to answer: what is the relative importance of the signaling channel as a transmission channel of the effects of quantitative easing? \citep{Bauer2014}
+
+In this paper, I will focus on one structural model that has been used to answer this research question--the dynamic term structural model (DTSM). In particular, I will focus on the employment of the model, first by Kim and Wright (2005) and then by Rudebusch and Bauer (2014). \citep{Kim2005} \citep{Bauer2014} In short, the structural model is used to decompose bond yields into two portions: the term premia, capturing the premium paid for having a bond with an $n$-year maturity, and the expected interest rate over the $n$ years of the bond's maturity. Thus, the changes to these components of a bond's yield are critical for deciphering the relative importance of different transmission channels of QE policy. 
+
+The structure of my paper is as follows. I will begin by introducing the foundations of the DTSM model, following Duffee's work summarizing the 1st and 2nd generations of the model as well as their work on estimation methods. \citep{Duffee2002} I will then focus on the specific example of Kim and Wright's use of the model, explaining its key assumptions and how it is derived. Next, I will look at how Gagnon et al. use Kim and Wright's bond decomposition data to support their conclusions about QE's transmission channels, before concluding with Rudebusch and Bauer's critique of Kim and Wright's (2005) use of the DTSM.
+
+\section{The Evolution of the DTSM and Estimation Techniques}
+
+Duffee (2002) provides an excellent introduction into multi-factor DTSM models and their evolution. \citep{Duffee2002} He focuses on ``affine" models, or models where everything is linearly related to the state variables (variables not directly observed)--concluding that \textit{entirely} affine models are terrible at forecasting bond yields, to the point where random walks are more effective forecasters. These models underestimate expected excess returns for long-term bonds when the slope of the yield curve is particularly steep, a critical failure. 
+
+This empirical failure of the first-generation of DTSMs, the completely affine ones, is due to an assumption they make: that compensation for risk has a constant linear relationship with the variance of risk. This assumption allows these models to be arbitrage-free (there is no situation where investors get risk compensation, without actually being exposed to risk, since risk compensation and risk go the same way). Duffee, however, lays the groundwork for a second generation of DTSMs, which aren't \textit{completely} affine, but are ``essentially" affine, which produce much more accurate forecasts than the first generation. This generation, as Kim and Orphanides put it, ``allows for interesting departures from the expectations hypothesis" as the modeling of risk premia has become unshackled from pure linearity. \citep{Kim2012}
+
+Beyond the varying degrees of affinity distinguishing DTSMs, there are also different methods of estimation. For example, Duffee (2002) conducts a survey of a variety of affine models (each with 3 factors). His method of estimation is quasi maximum likelihood (QML), an estimation technique that maximizes a normal log likelihood and then jointly parameterizes conditional means and covariances--an estimation technique particularly easy with completely or essentially affine models. \citep{Bollerslev1992} Duffee briefly mentions other estimation techniques in his 2002 article; however, he greatly expands on it in his article with Stanton in 2012. \citep{Duffee2012} As Duffee and Stanton write, the development of the second generation DTSMs by Duffee in 2002 are theoretical in nature, while the corresponding \textit{empirical} study of differing estimation methods lagged behind.
+
+Duffee and Stanton focus on the three primary estimation techniques used for 2nd generation DTSM models: 1) maximum likelihood (both exact and simulated), 2) efficient method of moments, and 3) a variant of the Kalman filter (the estimation technique employed by Kim and Wright (2005)). \citep{Duffee2012} \citep{Kim2005} Focusing on two categories of 2nd generation DTSMs, the ``essentially affine" and the ``semi-affine" (the latter of which emerged after the publication of Duffee's article in 2002), Duffee and Stanton come to a few conclusions: 1) when the DTSM doest \textit{not} heavily restrict the price of risk (i.e., the less affine the model is), the poorer the job that maximum likelihood does; 2) efficient method of moments is completely and totally unacceptable even for the simplest and most affine models; and 3) the Kalman filter is a reasonable choice when maximum likelihood is not feasible, with similar biases to maximum likelihood. 
+
+\section{Kim and Wright's Derivation of the Model}
+\begin{comment}
+With this context in mind, let's examine Kim and Wright's (2005) employment of a 3-factor arbitrage-free DTSM. They begin with creating a system of equations to represent the price of a nominal, $n$-period real zero-coupon bond; the bond is priced at $t$ pays one unit at time $t+n$. The representative investor has a basic utility function $u(c_t)$ that is only a function of consumption, $c_t$ of the form:
+\begin{gather}
+	\sum^{\infty}_{j = 0} \beta^ju(c_{t+j})
+\end{gather}
+In order to maximize utility of this form, the price of this $n$-period, real zero-coupon bond is given by the following equation:
+\begin{gather}
+	P^R_{n,t} = E_t(\beta^n\frac{u'(c_{t+n})}{u'(c_t)})
+\end{gather}
+where $u'(t)$ is the utility function derived with respect to time, indicating marginal utility at time $t$. What does this equation mean intuitively? Recall that the bond pays off one unit of consumption in time $t+n$; thus, the ratio of marginal utility in time $t+n$, when the bond will be paid out, and marginal utility in time $t$, when the bond is bought, captures the relative importance of future consumption to present consumption. If marginal utility was greater tomorrow than it was today for an investor, then that investor would pay something to consume tomorrow rather than today--meaning $P > 1$.
+\end{comment}
+
+With this context in mind, let's examine Kim and Wright's (2005) employment of a 3-factor arbitrage-free DTSM. Kim and Wright begin by deriving an equation for the price of a \textit{nominal}, zero-coupon bond. Let's being with their continuous model for the nominal bond, that adopts a utility function of the form ($c(t)$ denoting instantaneous consumption and $u(c(t))$ denoting instantaneous utility): 
+\begin{gather}
+	E_t(\int^\infty_{s = 0} e^{-\delta s}u(c(t+s)))ds
+\end{gather}
+The same derivation of the first-order condition for utility maximization yields us the equation for the price of the bond (note that this is distinguished from the real bond's price by the term $\frac{Q(t)}{Q(t+n)}$ where $Q(t)$ represents the price index at time $t$):
+\begin{gather}
+	P_{n,t} = E_t(e^{-\sigma n}\frac{u'(c(t+n))}{u'(c(t))} \frac{Q(t)}{Q(t+n)})
+\end{gather}
+We can simplify this expression, if we create a new variable, $m(t) = \frac{e^{-\sigma t}u'(c(t))}{Q(t)}$, which represents the continuous-time \textit{nominal} stochastic discount factor, or the relationship between the utility of current and future consumption, to:
+\begin{gather}
+	P_{n,t} = E_t(\frac{m(t+n)}{m(t)})
+\end{gather}
+Now with our equation of the price of the bond in hand, we can begin to derive the model, which builds off of the work of Duffee (2002) and Kim and Ophanides (2004). The model's full description is that of an arbitrage-free three-factor term structure model; the ``three-factor" in its name refers to the three latent variables used to estimate the model (recall that all 7 of the models that Duffee tested were 3-factor models).\footnote{The authors state one of their assumptions to be that the term structure can be adequately explained by 3 factors. They specifically list the three variables of the level, slope, and curvature of the yield curve as examples.} \citep{Duffee2002} The model's most basic, and critical, assumption is the one that makes it arbitrage-free: the pricing relationship outlined in equation (3) holds for \textit{all} bonds. Thus, there is \textit{no} arbitrage opportunity for investors. 
+
+The three factors that the model assume adequately explain the time-series dynamics of the term structure are denoted by the 3-d vector $x(t)$, whose time-series dynamic is characterized by a multivariate Ornstein-Uhlenbeck process: \footnote{A multivariate Ornstein-Uhlenbeck (OU) process fulfills three conditions: 1) follows a normal multivariate distribution (i.e., Gaussian), 2) is temporally homogenous (i.e., stationary), and 3) depends on previous states (i.e., Markovian). \citep{Maller2009}}
+\begin{gather}
+	dx(t) = Kx(t)dt + \Sigma dB(t)
+\end{gather}
+where $K$ and $\Sigma$ are constant $3\times3$ matrices and $B(t)$ is a 3-d Brownian motion (this is essentially here to introduce uncertainty and volatility). Then--and hence this model being defined as ``essentially affine"--the instantaneous interest rate is a linear function of these latent, or underlying, factors such that:
+\begin{gather}
+	r(t) = \rho_0 + \rho'x(t)
+\end{gather}
+So now let's take a look at what we have defined: we've defined the price of our nominal bonds of interest as a function of the stochastic nominal discount factor, how our 3 latent factors change, and the affine relationship between the instantaneous interest rate and our latent factors. Next, we need to define how the stochastic discount factor changes, which is given by the following equation:
+\begin{gather}
+	\frac{dm(t)}{m(t)} = -r(t)dt - \lambda(t)'dB(t)
+\end{gather}
+The left-hand side of this equation represents the growth rate in the stochastic nominal discount factor, which is what determines the price of the bond. We want this to be a function of 1) the risk-free interest rate (defined as $r(t)$) and 2) uncertainty/risk--recall that $B(t)$ is a source of uncertainty, and therefore we can interpret $\lambda$ to be the price of these uncertainties. It's here where the model distinguishes itself from the completely affine model, as there is flexibility in risk's relationship with the growth of the discount factor. 
+%We have the negative coefficients on the right-hand side because with higher risk-free interest rates, we expect contractions in the stochastic nominal discount factor and thus contractions in the price of the zero-coupon bond. 
+Then we want to define the price of risk, which is also assumed to be completely affine in its relationship with the latent factors: 
+\begin{gather}
+	\lambda(t) = \phi + \Phi x(t)
+\end{gather}
+Finally, we return to our equation for the price of the nominal bond; Kim and Wright (2005) then substitute equations (4) - (7) into the equation for price to yield:
+\begin{gather}
+	P_{n,t} = \text{exp}(a(n) + b(n)'x(t))
+\end{gather}
+where $a(n)$ and $b(n)$ are differential equations derived in Kim and Orphanides (2012). \citep{Kim2012} They then use the equation relating the price of the bond to the yield of the bond, $y_{n,t}$, as such:
+\begin{gather}
+	y_{n,t} = -\frac{1}{n}\text{log}P_{n,t} = - \frac{1}{n}(a(n) + b(n)'x(t))
+\end{gather}
+and then derive the $n$-year instantaneous forward rate, $f_{n,t}$, as such:
+\begin{gather}
+	f_{n,t} = - \frac{\partial\text{log}P_{n,t}}{\partial n} = - \frac{da(n)}{dn} - \frac{db(n)'}{dn}x(t)
+\end{gather}
+More applicable to our interest--decomposing the bond yields--the model is then estimated using the Kalman filter. First we have the measurement equation; in the Kalman filter estimation, the measurement equation relates the latent factors (which are unobservable) to something observable. \citep{Welch1995} In this case, we relate the latent factors $x_t$ to a vector of nominal zero-coupon bond yields (which are obviously observable) such that:
+\begin{gather}
+	o_t = a + B'x_t + \eta_t
+\end{gather}
+The other equation in the Kalman filter estimation is the transition equation, which essentially captures how the latent variables change over time. \citep{Welch1995} Remember that we defined the latent variables as changing through an Ornstein-Uhlenbeck (OU) process, so the transition equation--which must be discrete for estimation--is merely the discretization of the OU process we've already defined:
+\begin{gather}
+	x(t) = e^K x(t-1) + \epsilon_t
+\end{gather}
+Finally, this model can be estimated. In particular, we are interested in deriving the \textit{expected} future instantaneous short-term interest rate, which Kim and Wright accomplish by predicting the future evolution of factors, using the transition equation. Then the term premium for an $n$-year bond is merely the expected future short subtracted from the observed yield of the $n$-year bond.\footnote{Also of note is that Kim and Wright incorporate survey data of interest rate and economic expectations into their estimation using the Kalman Filter.}
+
+\section{Empirical Results}
+Now that the model has been run and the results estimated, what do those results look like and how can we apply them to answer research questions? First, the empirical data resulting from the model is readily available; in fact, it's a series in the Federal Reserve Economic Data (FRED) series, named "THREEFYTP10". \citep{fred_10} Historical data can also be found on the Federal Reserve's website. For each bond of $n$ maturity, there are four corresponding time series of data in this release: the fitted instantaneous forward rate $n$ years hence, the instantaneous forward term premium $n$ years hence, the fitted yield on an $n$ year zero coupon bond, and the term premium on an $n$ year zero coupon bond. Included in the appendix are graphs illustrating the bond decomposition for the 3-year and 10-year bonds, using data publicly posted by the Federal Reserve. 
+
+Now that we understand the empirical results this DTSM yields, how can we use these results to answer our original research question? To begin, Gagnon et al. (2011) use Kim and Wright's bond decomposition data to answer their research question, which focuses on the \textit{portfolio rebalancing} transmission channel of quantitative easing. The fundamental principle of the portfolio rebalancing channel is that the Federal Reserve wanted to target a segment of the market containing investors that wanted specifically a 10-year bond; thus, by buying those bonds through Large-Scale Asset Purchases (LSAPs), the Federal Reserve was reducing the supply of those bonds and thus would be reducing the term premium (or the \textit{risk premium} of these bonds) and long-term borrowing costs--\textit{not} through reducing the expected interest rate, but through reducing the demand for long-term bonds. \citep{Gagnon2011} Gagnon et al. (2011) simply use the series generated by Kim and Wright (2005) for their time-series and event-study methodologies.
+
+\section{Challenges and Conclusion}
+While Gagnon et al. come down firmly on the side of portfolio rebalancing's relative importance against the signaling channel, Rudebusch and Bauer come down on the side of the signaling channel; in particular, they dispute the findings Gagnon et al. (2011) generated using Kim and Wright's model by countering with their own use of a DTSM. \citep{Gagnon2011} \citep{Bauer2014} Rudebusch and Bauer point out two problems with Kim and Wright's (2005) structural decomposition of bond yields: 1) small-sample bias and 2) statistical uncertainty. This is something that Duffee and Stanton (2012) also pointed out, and Rudebusch and Bauer expand on this point to describe how Kim-Wright \textit{over-estimate} how fast the short rate reverts to its long-run average. While this may not be as significant a problem over the period Kim-Wright studied (focused on the 1980s and 1990s), this is a particularly potent error in the wake of tremendous economic shocks to interest rates such as the GFC and the COVID crisis. 
+
+Kim and Wright's (2005) over-estimation of the speed of rates' reversion to the long-run average over-estimates the variation of yields attributed to variations in term premium;  Gagnon et al.'s empirical findings for the portfolio rebalancing channel that depend on high levels of variation in the term premium are thus invalid, and Rudebusch and Bauer's adjusted DTSM finds much lower levels of term premia variation and greater level of variation in expected short rates, supporting their conclusion in favor of the relative importance of the signaling channel.
+
+The implications of the above debate about the biases in the DTSM model are rich, illustrating how critical our understanding of term premia is to understanding monetary policy. In particular, rising term premia have factored into the Federal Reserve's decision-making during the recent run of rate hikes, as long-term (i.e., the 10-Year Treasury Bond) term premia have been rising, indicating that perhaps the Federal Reserve has less of a need to continue to raise rates as financial conditions are tightening, \textit{independent} of expected future short rates (as the term premia is independent of expected future rates). Clearly, the biases of DTSMs merit continued study and evaluation to better understand monetary policy and its effects.
+
+\clearpage
+\section{Appendix 1 - Graphs}
+\textbf{Graph 1} \\
+	\includegraphics[width=4.5in]{\graphics{term_premia.png}} \\
+\textbf{Graph 2} \\ 
+	\includegraphics[width=4.5in]{\graphics{03_decomp.png}} \\
+\textbf{Graph 3} \\
+	\includegraphics[width=4.5in]{\graphics{10_decomp.png}} \\
+
+\clearpage
+\bibliographystyle{ecta}
+\bibliography{\bibfname}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

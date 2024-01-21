@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.4)  10 JAN 2024 13:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.4)  21 JAN 2024 10:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**final_paper.tex
-(./final_paper.tex
+**dtsm_review_posthumus.tex
+(./dtsm_review_posthumus.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -189,9 +189,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip50
 )
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 6.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 6.
-Package hyperref Info: Option `colorlinks' set `true' on input line 6.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 8.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 8.
+Package hyperref Info: Option `colorlinks' set `true' on input line 8.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
@@ -396,7 +396,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 
 Excluding comment 'comment')
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-2.
+3.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -406,27 +406,27 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count300
 \l__pdf_internal_box=\box56
 )
-(./final_paper.aux)
-\openout1 = `final_paper.aux'.
+(./dtsm_review_posthumus.aux)
+\openout1 = `dtsm_review_posthumus.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -436,14 +436,14 @@ LaTeX Font Info:    ... okay on input line 32.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
 * v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=542.02501pt
+* \textwidth=469.75502pt
 * \textheight=650.43001pt
-* \oddsidemargin=-36.135pt
-* \evensidemargin=-36.135pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -470,7 +470,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 33.
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -484,12 +484,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count301
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
- (./final_paper.out) (./final_paper.out)
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
+ (./dtsm_review_posthumus.out) (./dtsm_review_posthumus.out)
 \@outlinefile=\write4
-\openout4 = `final_paper.out'.
+\openout4 = `dtsm_review_posthumus.out'.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -516,256 +516,162 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Package natbib Warning: Citation `Petursson2001' on page 1 undefined on input l
-ine 40.
+Package natbib Warning: Citation `Bauer2014' on page 1 undefined on input line 
+41.
 
 
-Package natbib Warning: Citation `Bernanke1995' on page 1 undefined on input li
-ne 44.
+Package natbib Warning: Citation `Kim2005' on page 1 undefined on input line 43
+.
 
 
-Package natbib Warning: Citation `Petursson2001' on page 1 undefined on input l
-ine 44.
+Package natbib Warning: Citation `Bauer2014' on page 1 undefined on input line 
+43.
 
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-7.
 
-(/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
+Package natbib Warning: Citation `Duffee2002' on page 2 undefined on input line
+ 45.
 
-Package natbib Warning: Citation `Kim2005' on page 2 undefined on input line 57
+
+Package natbib Warning: Citation `Duffee2002' on page 2 undefined on input line
+ 49.
+
+
+Package natbib Warning: Citation `Kim2012' on page 2 undefined on input line 51
 .
 
 
-Package natbib Warning: Citation `Wu2016' on page 2 undefined on input line 57.
+Package natbib Warning: Citation `Bollerslev1992' on page 2 undefined on input 
+line 53.
 
 
+Package natbib Warning: Citation `Duffee2012' on page 2 undefined on input line
+ 53.
 
-Package natbib Warning: Citation `Acosta2022' on page 2 undefined on input line
- 57.
+[2]
 
-
-Package natbib Warning: Citation `Nakamura2018' on page 2 undefined on input li
-ne 57.
-
-
-Package natbib Warning: Citation `Guerkaynak2005' on page 2 undefined on input 
-line 57.
+Package natbib Warning: Citation `Duffee2012' on page 3 undefined on input line
+ 55.
 
 
-Package natbib Warning: Citation `Kim2005' on page 2 undefined on input line 77
+Package natbib Warning: Citation `Kim2005' on page 3 undefined on input line 55
 .
 
+Excluding 'comment' comment. [3]
 
-Package natbib Warning: Citation `Kim2005' on page 2 undefined on input line 78
-.
+Package natbib Warning: Citation `Duffee2002' on page 4 undefined on input line
+ 82.
 
 
-Package natbib Warning: Citation `Acosta2022' on page 2 undefined on input line
+Package natbib Warning: Citation `Maller2009' on page 4 undefined on input line
  84.
 
+[4] [5]
 
-Package natbib Warning: Citation `Acosta2022' on page 2 undefined on input line
- 87.
-
-
-Package natbib Warning: Citation `Acosta2022' on page 2 undefined on input line
- 88.
+Package natbib Warning: Citation `Kim2012' on page 6 undefined on input line 10
+6.
 
 
-Package natbib Warning: Citation `Acosta2022' on page 2 undefined on input line
- 89.
+Package natbib Warning: Citation `Welch1995' on page 6 undefined on input line 
+114.
 
 
-Package natbib Warning: Citation `Acosta2022' on page 2 undefined on input line
- 90.
+Package natbib Warning: Citation `Welch1995' on page 6 undefined on input line 
+118.
+
+[6]
+
+Package natbib Warning: Citation `fred_10' on page 7 undefined on input line 12
+5.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Package natbib Warning: Citation `Gagnon2011' on page 7 undefined on input line
+ 127.
 
-<matrix_graph.png, id=74, 702.625pt x 510.90875pt>
-File: matrix_graph.png Graphic file (type png)
-<use matrix_graph.png>
-Package pdftex.def Info: matrix_graph.png  used on input line 105.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<all_rates.png, id=75, 702.625pt x 510.90875pt>
-File: all_rates.png Graphic file (type png)
-<use all_rates.png>
-Package pdftex.def Info: all_rates.png  used on input line 105.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<detrend.png, id=76, 702.625pt x 510.90875pt>
-File: detrend.png Graphic file (type png)
-<use detrend.png>
-Package pdftex.def Info: detrend.png  used on input line 107.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<shocks_time.png, id=77, 702.625pt x 510.90875pt>
-File: shocks_time.png Graphic file (type png)
-<use shocks_time.png>
-Package pdftex.def Info: shocks_time.png  used on input line 107.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 96--108
-[] [] 
+Package natbib Warning: Citation `Gagnon2011' on page 7 undefined on input line
+ 130.
+
+
+Package natbib Warning: Citation `Bauer2014' on page 7 undefined on input line 
+130.
+
+[7] [8]
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_2023/g
+raphics/term_premia.png, id=73, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_2
+023/graphics/term_premia.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_20
+23/graphics/term_premia.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/dtsm_review_2023/graphics/term_premia.png  used on input line 139.
+(pdftex.def)             Requested size: 325.215pt x 236.4865pt.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_2023/g
+raphics/03_decomp.png, id=74, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_2
+023/graphics/03_decomp.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_20
+23/graphics/03_decomp.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/dtsm_review_2023/graphics/03_decomp.png  used on input line 141.
+(pdftex.def)             Requested size: 325.215pt x 236.4865pt.
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_2023/g
+raphics/10_decomp.png, id=75, 702.625pt x 510.90875pt>
+File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_2
+023/graphics/10_decomp.png Graphic file (type png)
+<use /Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_20
+23/graphics/10_decomp.png>
+Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
+folio/dtsm_review_2023/graphics/10_decomp.png  used on input line 143.
+(pdftex.def)             Requested size: 325.215pt x 236.4865pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--144
+
  []
 
+[9
 
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 96--108
-[] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--108
-
- []
-
-[2] [3 <./matrix_graph.png> <./all_rates.png>] Excluding 'comment' comment.
-(./reg_table.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 <./detrend.png> <./shocks_time.png>]
-
-Package natbib Warning: Citation `Kim2005' on page 5 undefined on input line 12
-4.
-
-
-Package natbib Warning: Citation `Petursson2001' on page 5 undefined on input l
-ine 128.
-
-
-Package natbib Warning: Citation `Campbell2009' on page 5 undefined on input li
-ne 128.
-
-<svar_intro.png, id=98, 702.625pt x 510.90875pt>
-File: svar_intro.png Graphic file (type png)
-<use svar_intro.png>
-Package pdftex.def Info: svar_intro.png  used on input line 129.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<svar_detrend.png, id=99, 702.625pt x 510.90875pt>
-File: svar_detrend.png Graphic file (type png)
-<use svar_detrend.png>
-Package pdftex.def Info: svar_detrend.png  used on input line 129.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-
-Package natbib Warning: Citation `Bernanke1990' on page 5 undefined on input li
-ne 130.
-
-<shock_tsline.png, id=100, 702.625pt x 510.90875pt>
-File: shock_tsline.png Graphic file (type png)
-<use shock_tsline.png>
-Package pdftex.def Info: shock_tsline.png  used on input line 131.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<shock_obs.png, id=101, 702.625pt x 510.90875pt>
-File: shock_obs.png Graphic file (type png)
-<use shock_obs.png>
-Package pdftex.def Info: shock_obs.png  used on input line 131.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 128--133
-[] [] 
- []
-
-
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 128--133
-[] [] 
- []
-
-[5] [6 <./svar_intro.png> <./svar_detrend.png>] (./var_specification.tex)
-<var_ac.png, id=114, 702.625pt x 510.90875pt>
-File: var_ac.png Graphic file (type png)
-<use var_ac.png>
-Package pdftex.def Info: var_ac.png  used on input line 138.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-<var_ac_diff.png, id=115, 702.625pt x 510.90875pt>
-File: var_ac_diff.png Graphic file (type png)
-<use var_ac_diff.png>
-Package pdftex.def Info: var_ac_diff.png  used on input line 138.
-(pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
-
-(./stationarity_test.tex)
-<var_basic.png, id=116, 702.625pt x 510.90875pt>
-File: var_basic.png Graphic file (type png)
-<use var_basic.png>
-Package pdftex.def Info: var_basic.png  used on input line 142.
-(pdftex.def)             Requested size: 361.34999pt x 262.75844pt.
-
-Overfull \hbox (2.28001pt too wide) in paragraph at lines 135--144
-[] [] 
- []
-
-[7 <./shock_tsline.png> <./shock_obs.png>] [8 <./var_ac.png> <./var_ac_diff.png
->]
-
-Package natbib Warning: Citation `Petursson2001' on page 9 undefined on input l
-ine 146.
-
-[9 <./var_basic.png>] (./wold_estimates_shocks.tex) [10]
-<irf_svar_shock.png, id=151, 702.625pt x 510.90875pt>
-File: irf_svar_shock.png Graphic file (type png)
-<use irf_svar_shock.png>
-Package pdftex.def Info: irf_svar_shock.png  used on input line 173.
-(pdftex.def)             Requested size: 361.34999pt x 262.75844pt.
- [11] [12 <./irf_svar_shock.png>] [13]
-No file final_paper.bbl.
-(./_3_month_test.tex) (./_5_yr_test.tex) (./bank_loan_test.tex)
-(./fed_funds_test.tex)
-
-Package natbib Warning: Citation `Acosta2022' on page 14 undefined on input lin
-e 196.
-
-<shock_comparison.png, id=166, 702.625pt x 510.90875pt>
-File: shock_comparison.png Graphic file (type png)
-<use shock_comparison.png>
-Package pdftex.def Info: shock_comparison.png  used on input line 197.
-(pdftex.def)             Requested size: 361.34999pt x 262.75844pt.
-[14
-
-
-] [15 <./shock_comparison.png>]
+ </Users/danielposthumus/danielposthumus.github.io/_portfolio/dtsm_review_2023/
+graphics/term_premia.png> </Users/danielposthumus/danielposthumus.github.io/_po
+rtfolio/dtsm_review_2023/graphics/03_decomp.png>] [10 </Users/danielposthumus/d
+anielposthumus.github.io/_portfolio/dtsm_review_2023/graphics/10_decomp.png>]
+No file dtsm_review_posthumus.bbl.
 
 Package natbib Warning: There were undefined citations.
 
-[16] (./final_paper.aux)
-Package rerunfilecheck Info: File `final_paper.out' has not changed.
-(rerunfilecheck)             Checksum: 0F4E3C053831EE0C1CF0AD8655D848D9;2633.
+(./dtsm_review_posthumus.aux)
+
+Package rerunfilecheck Warning: File `dtsm_review_posthumus.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `dtsm_review_posthumus.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  6C56397450C4474D28A3E6F9BB6D872A;1213.
  ) 
 Here is how much of TeX's memory you used:
- 13119 strings out of 478268
- 211800 string characters out of 5846348
- 514625 words of memory out of 5000000
- 31046 multiletter control sequences out of 15000+600000
- 499443 words of font info for 89 fonts, out of 8000000 for 9000
+ 12930 strings out of 478268
+ 210363 string characters out of 5846348
+ 502686 words of memory out of 5000000
+ 30921 multiletter control sequences out of 15000+600000
+ 494234 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,63p,1447b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exist
-, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
-, replaced by a fixed one
-
+ 60i,11n,63p,1105b,335s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
@@ -780,22 +686,21 @@ pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texl
-ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texli
-ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texliv
-e/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
-2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
-22/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-di
-st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on final_paper.pdf (16 pages, 1843974 bytes).
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texli
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
+/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2
+022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/202
+2/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-
+dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts
+/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw
+/times/utmri8a.pfb>
+Output written on dtsm_review_posthumus.pdf (10 pages, 671890 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 200 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
- 178 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 105 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

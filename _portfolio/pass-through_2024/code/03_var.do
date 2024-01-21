@@ -182,8 +182,10 @@ matrix A = (1,0,0,0\-`alpha',1,0,0\-`beta',-`phi',1,0\-`rho',-`mu',-`gamma',1)
 tsline target fed_funds_shock, ytitle("Percent") xtitle("Date") tlabel(, format(%tmCY)) legend(label(1 "Acosta (2022) Shock")  label(2 "VAR-Generated Shock")) title("VAR-Generated Rate Shocks" "and Acosta (2022) Shocks")
 	graph export "$output/shock_comparison.png", replace
 	
-	
-	
+/*
+log close
+exit
+*/
 	
 
 
