@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.4)  21 JAN 2024 16:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.4)  21 JAN 2024 23:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,9 +601,9 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_20
 24/graphics/detrend.png> </Users/danielposthumus/danielposthumus.github.io/_por
-tfolio/pass-through_2024/graphics/shocks_time.png>] [5]
+tfolio/pass-through_2024/graphics/shocks_time.png>]
 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/svar_intro.png, id=147, 702.625pt x 510.90875pt>
+graphics/svar_intro.png, id=142, 702.625pt x 510.90875pt>
 File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 2024/graphics/svar_intro.png Graphic file (type png)
 <use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
@@ -612,7 +612,7 @@ Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
 folio/pass-through_2024/graphics/svar_intro.png  used on input line 131.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/svar_detrend.png, id=148, 702.625pt x 510.90875pt>
+graphics/svar_detrend.png, id=143, 702.625pt x 510.90875pt>
 File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 2024/graphics/svar_detrend.png Graphic file (type png)
 <use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
@@ -621,7 +621,7 @@ Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
 folio/pass-through_2024/graphics/svar_detrend.png  used on input line 131.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/shock_tsline.png, id=151, 702.625pt x 510.90875pt>
+graphics/shock_tsline.png, id=146, 702.625pt x 510.90875pt>
 File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 2024/graphics/shock_tsline.png Graphic file (type png)
 <use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
@@ -630,7 +630,7 @@ Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
 folio/pass-through_2024/graphics/shock_tsline.png  used on input line 133.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/shock_obs.png, id=152, 702.625pt x 510.90875pt>
+graphics/shock_obs.png, id=147, 702.625pt x 510.90875pt>
 File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 2024/graphics/shock_obs.png Graphic file (type png)
 <use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
@@ -648,13 +648,13 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 130--135
 [] [] 
  []
 
-[6 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_20
-24/graphics/svar_intro.png> </Users/danielposthumus/danielposthumus.github.io/_
-portfolio/pass-through_2024/graphics/svar_detrend.png>]
+[5] [6 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-throug
+h_2024/graphics/svar_intro.png> </Users/danielposthumus/danielposthumus.github.
+io/_portfolio/pass-through_2024/graphics/svar_detrend.png>]
 (/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
 graphics/var_specification.tex)
 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/var_ac.png, id=162, 702.625pt x 510.90875pt>
+graphics/var_ac.png, id=163, 702.625pt x 510.90875pt>
 File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 2024/graphics/var_ac.png Graphic file (type png)
 <use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
@@ -663,7 +663,7 @@ Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
 folio/pass-through_2024/graphics/var_ac.png  used on input line 140.
 (pdftex.def)             Requested size: 271.0125pt x 197.07077pt.
 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/var_ac_diff.png, id=163, 702.625pt x 510.90875pt>
+graphics/var_ac_diff.png, id=164, 702.625pt x 510.90875pt>
 File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 2024/graphics/var_ac_diff.png Graphic file (type png)
 <use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
@@ -675,7 +675,7 @@ folio/pass-through_2024/graphics/var_ac_diff.png  used on input line 140.
 (/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
 graphics/stationarity_test.tex)
 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/var_basic.png, id=164, 702.625pt x 510.90875pt>
+graphics/var_basic.png, id=165, 702.625pt x 510.90875pt>
 File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 2024/graphics/var_basic.png Graphic file (type png)
 <use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
@@ -688,27 +688,17 @@ Overfull \hbox (2.28001pt too wide) in paragraph at lines 137--146
 [] [] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [7 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_20
 24/graphics/shock_tsline.png> </Users/danielposthumus/danielposthumus.github.io
-/_portfolio/pass-through_2024/graphics/shock_obs.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[8 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_20
-24/graphics/var_ac.png> </Users/danielposthumus/danielposthumus.github.io/_port
-folio/pass-through_2024/graphics/var_ac_diff.png>] [9 </Users/danielposthumus/d
-anielposthumus.github.io/_portfolio/pass-through_2024/graphics/var_basic.png>]
-[10]
-(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/wold_estimates_shocks.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+/_portfolio/pass-through_2024/graphics/shock_obs.png>] [8 </Users/danielposthum
+us/danielposthumus.github.io/_portfolio/pass-through_2024/graphics/var_ac.png> 
 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
-graphics/irf_svar_shock.png, id=198, 702.625pt x 510.90875pt>
+graphics/var_ac_diff.png>] [9 </Users/danielposthumus/danielposthumus.github.io
+/_portfolio/pass-through_2024/graphics/var_basic.png>]
+(/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/wold_estimates_shocks.tex) [10]
+</Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
+graphics/irf_svar_shock.png, id=202, 702.625pt x 510.90875pt>
 File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 2024/graphics/irf_svar_shock.png Graphic file (type png)
 <use /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2
@@ -716,8 +706,8 @@ File: /Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_
 Package pdftex.def Info: /Users/danielposthumus/danielposthumus.github.io/_port
 folio/pass-through_2024/graphics/irf_svar_shock.png  used on input line 175.
 (pdftex.def)             Requested size: 361.34999pt x 262.75844pt.
-[11] [12 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-thro
-ugh_2024/graphics/irf_svar_shock.png>] [13] (./pass-through_2024.bbl) [14
+ [11] [12 </Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-thr
+ough_2024/graphics/irf_svar_shock.png>] [13] (./pass-through_2024.bbl) [14
 
 ]
 (/Users/danielposthumus/danielposthumus.github.io/_portfolio/pass-through_2024/
@@ -748,11 +738,11 @@ Package rerunfilecheck Info: File `pass-through_2024.out' has not changed.
 Here is how much of TeX's memory you used:
  13164 strings out of 478268
  222303 string characters out of 5846348
- 514206 words of memory out of 5000000
+ 516206 words of memory out of 5000000
  31077 multiletter control sequences out of 15000+600000
  499541 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,14n,63p,1448b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,14n,63p,1448b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
 , replaced by a fixed one
@@ -791,7 +781,7 @@ dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-di
 st/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on pass-through_2024.pdf (17 pages, 1819144 bytes).
+Output written on pass-through_2024.pdf (17 pages, 1819767 bytes).
 PDF statistics:
  318 PDF objects out of 1000 (max. 8388607)
  257 compressed objects within 3 object streams

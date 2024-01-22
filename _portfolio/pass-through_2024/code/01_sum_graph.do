@@ -16,12 +16,12 @@ clear all
 set linesize 80
 macro drop _all
 
-*******************************************************************************************Set Global Macros              *******************************************************************************************
+****************************************************************************************Set Global Macros              ****************************************************************************************
 global project "~/danielposthumus.github.io/_portfolio/pass-through_2024"
 	global code "$project/code"
 	global data "$project/data"
 	global output "$project/graphics"
-*******************************************************************************************Create basic time-series graphs for OLS analysis         *******************************************************************************************
+****************************************************************************************Create basic time-series graphs for OLS analysis         ****************************************************************************************
 cd $data 
 use master_daily, clear
 * Let's begin by restricting our time-values based on our selected sample, from 1995 to 2022 -- due to the availability of our selected data. 
@@ -47,7 +47,7 @@ restore
 * Next, let's create a total graph, which will contain the following elements: 1) a time-series line of the shadow rate, 2) a vertical bar graph of monetary policy rate path shocks, and 3) a vertical bar graph of monetary policy target rate shocks.
 twoway line shadow_rate date || bar path date || bar target date, xtitle("") ytitle("Percent") title("Shadow Fed Funds and" "Monetary Policy Shocks") legend(label(1 "Shadow Rate") label(2 "Rate Path Shocks") label(3 "Target Rate Shocks") size(small)) xlabel(, format(%tdCY))
 	graph export "$output/shocks_time.png", replace
-*******************************************************************************************Create basic time-series graphs for VAR Methods         *******************************************************************************************
+****************************************************************************************Create basic time-series graphs for VAR Methods         ****************************************************************************************
 * We also want to prepare graphs for the section of the paper about our Structural VAR model -- so, to begin, let's prepare a basic time-series capturing our four sub-market rates of interest: 1) the federal funds rate, 2) the 3-month US Treasury Bill yield, 3) the 5-year US Treasury Bond yield, and 4) the bank loan interest rate. 
 tsline fed_funds _3_month _5_yr bank_loan, title("Four Indicators of the US Financial Economy") tlabel(, format(%tdCY)) ytitle("Percent") xtitle("") legend(label(1 "Lower Fed Funds") label(2 "3-Month Treasury") label(3 "5-Year Treasury") label(4 "Bank Loan Rate") size(small)) tline(420 753)
 	graph export "$output/svar_intro.png", replace
@@ -62,7 +62,7 @@ preserve
 	tsline fed_funds_detrend _3_month_detrend _5_yr_detrend bank_loan_detrend, title("Detrended Sub-Market Rates") tlabel(, format(%tdCY)) ytitle("Percent") xtitle("") legend(label(1 "Lower Fed Funds") label(2 "3-Month Treasury") label(3 "5-Year Treasury") label(4 "Bank Loan Rate") size(small)) tline(420 753)
 		graph export "$output/svar_detrend.png", replace
 restore
-*******************************************************************************************Create Scatterplots          *******************************************************************************************
+****************************************************************************************Create Scatterplots          ****************************************************************************************
 * To begin, let's create a basic scatterplot matrix of our borrowing costs of interest to parse out any general correlations. Before plotting these scatterplots, let's do a quick preserve/restore w/re-labeling our variables concisely for graphing purposes.
 preserve 
 	label var shadow_rate "Shadow Rate"
@@ -80,8 +80,26 @@ preserve
 	label var path "Rate Path Shock"
 		graph matrix news_shock shock_e_effr target path, title("Correlations Between Different" "Monetary Policy Shocks") ms(p) half
 restore
+****************************************************************************************Auto-Correlation Plots         ****************************************************************************************
+	* To understand our variables better, let's run a bunch of auto-correlations and 
+	* take a look. First we'll set localsfor labeling purposes:
+local _3_month "3-Month T-Bill"
+local _3_yr "3-Year T-Bond"
+local _10_yr "10-Year T-Bond"
+* Now let's plot using a basic loop. If you want graphs to show up, simply remove the "nodraw" option. If needed externally, simply un-comment the graph export commands.
+foreach v in _3_month _3_yr _10_yr {
+* First, the non-differenced data:
+	ac `v', title("``v''" "Auto-Correlations") name(`v'_ac) lags(20) nodraw
+	pac `v', title("``v''" "Partial Auto-Correlations") name(`v'_pac) lags(20) nodraw
+		graph combine `v'_pac `v'_ac, nodraw
+			* graph export "$output/`v'_ac.png", replace
+* Second, the differenced data:
+	ac d.`v', title("``v''" "First-Diff Auto-Correlations") name(d`v'_ac, replace) lags(20) nodraw
+	pac d.`v', title("``v''" "First-Diff Partial Auto-Correlations") name(d`v'_pac, replace) lags(20) nodraw
+		graph combine d`v'_pac d`v'_ac, nodraw
+			* graph export "$output/d`v'_ac.png", replace
+}
 
-	
 /*
 log close
 exit

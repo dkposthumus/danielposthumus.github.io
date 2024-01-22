@@ -1,81 +1,115 @@
 \begin{table}[!h]
-\caption{Basic Regression Results}
+\caption{Macroeconomic Factors' Relationship with Detrended Borrowing Costs}
 \centering
-\begin{tabular}{llll}
-\cline{1-4}
+\begin{tabular}{llllll}
+\cline{1-6}
 \multicolumn{1}{c}{} &
-  \multicolumn{1}{|r}{Shadow Rate} &
-  \multicolumn{1}{r}{Target} &
-  \multicolumn{1}{r}{Path} \\
-\multicolumn{1}{c}{} &
-  \multicolumn{1}{|r}{\_r\_b} &
-  \multicolumn{1}{r}{\_r\_b} &
-  \multicolumn{1}{r}{\_r\_b} \\
-\cline{1-4}
-\multicolumn{1}{l}{3-Year Treasury} &
-  \multicolumn{1}{|r}{0.711***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{\quad 3-Year (Macro Controls)} &
-  \multicolumn{1}{|r}{0.511***} &
-  \multicolumn{1}{r}{-0.029**} &
-  \multicolumn{1}{r}{0.060***} \\
-\multicolumn{1}{l}{3-Year Treasury (Detrended)} &
-  \multicolumn{1}{|r}{0.274***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{\quad 3-Year Treasury (Detrended, Macro Controls)} &
-  \multicolumn{1}{|r}{0.460***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{10-Year Treasury} &
-  \multicolumn{1}{|r}{0.513***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{\quad 10-Year Treasury (Macro Controls)} &
-  \multicolumn{1}{|r}{0.194***} &
-  \multicolumn{1}{r}{-0.014} &
-  \multicolumn{1}{r}{0.053***} \\
-\multicolumn{1}{l}{10-Year Treasury (Detrended)} &
-  \multicolumn{1}{|r}{0.106***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{\quad 10-Year Treasury (Detrended, Macro Controls)} &
-  \multicolumn{1}{|r}{0.147***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{30-Year Mortgage} &
-  \multicolumn{1}{|r}{0.497***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{\quad 30-Year Mortgage (Macro Controls)} &
-  \multicolumn{1}{|r}{0.183***} &
-  \multicolumn{1}{r}{-0.011} &
-  \multicolumn{1}{r}{0.049***} \\
-\multicolumn{1}{l}{\quad 30-Year Mortgage (Detrended)} &
-  \multicolumn{1}{|r}{0.112***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{30-Year Mortgage (Detrended, Macro Controls)} &
-  \multicolumn{1}{|r}{0.139***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{Corp. Bond} &
-  \multicolumn{1}{|r}{0.427***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{\quad Corp. Bond (Macro Controls)} &
-  \multicolumn{1}{|r}{0.050***} &
-  \multicolumn{1}{r}{-0.005} &
-  \multicolumn{1}{r}{0.036***} \\
-\multicolumn{1}{l}{Corp. Bond (Detrended)} &
-  \multicolumn{1}{|r}{0.040***} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\multicolumn{1}{l}{\quad Corp. Bond (Detrended, Macro Controls)} &
-  \multicolumn{1}{|r}{0.005} &
-  \multicolumn{1}{r}{} &
-  \multicolumn{1}{r}{} \\
-\cline{1-4}
+  \multicolumn{1}{|c}{3-Month} &
+  \multicolumn{1}{c}{3-Year} &
+  \multicolumn{1}{c}{10-Year} &
+  \multicolumn{1}{c}{30-Year mortgage} &
+  \multicolumn{1}{c}{Corporate bond} \\
+\cline{1-6}
+\multicolumn{1}{l}{Shadow rate} &
+  \multicolumn{1}{|c}{0.648***} &
+  \multicolumn{1}{c}{0.460***} &
+  \multicolumn{1}{c}{0.147***} &
+  \multicolumn{1}{c}{0.139***} &
+  \multicolumn{1}{c}{0.005} \\
+\multicolumn{1}{l}{} &
+  \multicolumn{1}{|c}{(0.020)} &
+  \multicolumn{1}{c}{(0.020)} &
+  \multicolumn{1}{c}{(0.019)} &
+  \multicolumn{1}{c}{(0.019)} &
+  \multicolumn{1}{c}{(0.018)} \\
+\multicolumn{1}{l}{Core PCE} &
+  \multicolumn{1}{|c}{0.284***} &
+  \multicolumn{1}{c}{0.403***} &
+  \multicolumn{1}{c}{0.318***} &
+  \multicolumn{1}{c}{0.298***} &
+  \multicolumn{1}{c}{0.183***} \\
+\multicolumn{1}{l}{} &
+  \multicolumn{1}{|c}{(0.043)} &
+  \multicolumn{1}{c}{(0.042)} &
+  \multicolumn{1}{c}{(0.039)} &
+  \multicolumn{1}{c}{(0.040)} &
+  \multicolumn{1}{c}{(0.038)} \\
+\multicolumn{1}{l}{Labor force participation} &
+  \multicolumn{1}{|c}{-0.682***} &
+  \multicolumn{1}{c}{-0.449***} &
+  \multicolumn{1}{c}{-0.102***} &
+  \multicolumn{1}{c}{-0.116***} &
+  \multicolumn{1}{c}{0.055**} \\
+\multicolumn{1}{l}{} &
+  \multicolumn{1}{|c}{(0.031)} &
+  \multicolumn{1}{c}{(0.030)} &
+  \multicolumn{1}{c}{(0.029)} &
+  \multicolumn{1}{c}{(0.029)} &
+  \multicolumn{1}{c}{(0.027)} \\
+\multicolumn{1}{l}{Home ownership rate} &
+  \multicolumn{1}{|c}{0.064***} &
+  \multicolumn{1}{c}{0.003} &
+  \multicolumn{1}{c}{-0.027} &
+  \multicolumn{1}{c}{0.044**} &
+  \multicolumn{1}{c}{-0.050**} \\
+\multicolumn{1}{l}{} &
+  \multicolumn{1}{|c}{(0.023)} &
+  \multicolumn{1}{c}{(0.023)} &
+  \multicolumn{1}{c}{(0.022)} &
+  \multicolumn{1}{c}{(0.022)} &
+  \multicolumn{1}{c}{(0.021)} \\
+\multicolumn{1}{l}{Real GDP growth} &
+  \multicolumn{1}{|c}{1.315} &
+  \multicolumn{1}{c}{-0.537} &
+  \multicolumn{1}{c}{-0.375} &
+  \multicolumn{1}{c}{-6.973***} &
+  \multicolumn{1}{c}{-7.489***} \\
+\multicolumn{1}{l}{} &
+  \multicolumn{1}{|c}{(2.471)} &
+  \multicolumn{1}{c}{(2.428)} &
+  \multicolumn{1}{c}{(2.293)} &
+  \multicolumn{1}{c}{(2.305)} &
+  \multicolumn{1}{c}{(2.187)} \\
+\multicolumn{1}{l}{Unemployment rate} &
+  \multicolumn{1}{|c}{-0.131***} &
+  \multicolumn{1}{c}{-0.144***} &
+  \multicolumn{1}{c}{-0.050**} &
+  \multicolumn{1}{c}{-0.085***} &
+  \multicolumn{1}{c}{-0.046**} \\
+\multicolumn{1}{l}{} &
+  \multicolumn{1}{|c}{(0.023)} &
+  \multicolumn{1}{c}{(0.023)} &
+  \multicolumn{1}{c}{(0.021)} &
+  \multicolumn{1}{c}{(0.022)} &
+  \multicolumn{1}{c}{(0.020)} \\
+\multicolumn{1}{l}{VIX Index (\% chg)} &
+  \multicolumn{1}{|c}{0.011} &
+  \multicolumn{1}{c}{-0.064} &
+  \multicolumn{1}{c}{-0.002} &
+  \multicolumn{1}{c}{0.074} &
+  \multicolumn{1}{c}{0.099} \\
+\multicolumn{1}{l}{} &
+  \multicolumn{1}{|c}{(0.142)} &
+  \multicolumn{1}{c}{(0.140)} &
+  \multicolumn{1}{c}{(0.132)} &
+  \multicolumn{1}{c}{(0.133)} &
+  \multicolumn{1}{c}{(0.126)} \\
+\multicolumn{1}{c}{Number of observations} &
+  \multicolumn{1}{|c}{334} &
+  \multicolumn{1}{c}{334} &
+  \multicolumn{1}{c}{334} &
+  \multicolumn{1}{c}{334} &
+  \multicolumn{1}{c}{334} \\
+\multicolumn{1}{c}{Adjusted R-squared} &
+  \multicolumn{1}{|c}{0.868} &
+  \multicolumn{1}{c}{0.823} &
+  \multicolumn{1}{c}{0.473} &
+  \multicolumn{1}{c}{0.491} &
+  \multicolumn{1}{c}{0.175} \\
+\cline{1-6}
 \end{tabular}
+
+\footnotesize{
+*** p$<$.01, ** p$<$.05, * p$<$.1
+}
 \end{table}
