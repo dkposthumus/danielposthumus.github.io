@@ -9,6 +9,6 @@ In this paper, I will focus on one structural model that has been used to answer
 
 [Data](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_portfolio/dtsm_review_2024/data)
 
-[Replication Do-Files](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_portfolio/dtsm_review_2024/code)
+[Replication Code](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_portfolio/dtsm_review_2024/code)
 
 *Note: This project was initially completed as the final paper for my undergraduate economics course, "Empirical Macroeconomics" with Professor Nathaniel Throckmorton.*
