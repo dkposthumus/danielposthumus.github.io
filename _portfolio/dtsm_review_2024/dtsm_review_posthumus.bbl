@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[\protect\citeauthoryear{Bauer and Rudebusch}{Bauer and
+  Rudebusch}{2014}]{Bauer2014}
+\textsc{Bauer, M. and G.~D. Rudebusch} (2014): \enquote{The signaling channel
+  for Federal Reserve bond purchases,} \emph{International Journal of Central
+  Banking}.
+
+\bibitem[\protect\citeauthoryear{Bollerslev and Wooldridge}{Bollerslev and
+  Wooldridge}{1992}]{Bollerslev1992}
+\textsc{Bollerslev, T. and J.~M. Wooldridge} (1992): \enquote{Quasi-maximum
+  likelihood estimation and inference in dynamic models with time-varying
+  covariances,} \emph{Econometric reviews}, 11, 143--172.
+
+\bibitem[\protect\citeauthoryear{Duffee}{Duffee}{2002}]{Duffee2002}
+\textsc{Duffee, G.~R.} (2002): \enquote{Term premia and interest rate forecasts
+  in affine models,} \emph{The Journal of Finance}, 57, 405--443.
+
+\bibitem[\protect\citeauthoryear{Duffee and Stanton}{Duffee and
+  Stanton}{2012}]{Duffee2012}
+\textsc{Duffee, G.~R. and R.~H. Stanton} (2012): \enquote{Estimation of dynamic
+  term structure models,} \emph{The Quarterly Journal of Finance}, 2, 1250008.
+
+\bibitem[\protect\citeauthoryear{Gagnon, Raskin, Remache, and Sack}{Gagnon
+  et~al.}{2011}]{Gagnon2011}
+\textsc{Gagnon, J., M.~Raskin, J.~Remache, and B.~Sack} (2011): \enquote{The
+  financial market effects of the Federal Reserve’s large-scale asset
+  purchases,} \emph{International Journal of Central Banking}, 7, 45--52.
+
+\bibitem[\protect\citeauthoryear{Kim and Orphanides}{Kim and
+  Orphanides}{2012}]{Kim2012}
+\textsc{Kim, D.~H. and A.~Orphanides} (2012): \enquote{Term structure
+  estimation with survey data on interest rate forecasts,} \emph{Journal of
+  Financial and Quantitative Analysis}, 47, 241--272.
+
+\bibitem[\protect\citeauthoryear{Kim and Wright}{Kim and
+  Wright}{2005}]{Kim2005}
+\textsc{Kim, D.~H. and J.~H. Wright} (2005): \enquote{An arbitrage-free
+  three-factor term structure model and the recent behavior of long-term yields
+  and distant-horizon forward rates,} \emph{FEDS Working Paper Series}.
+
+\bibitem[\protect\citeauthoryear{Maller, M{\"u}ller, and Szimayer}{Maller
+  et~al.}{2009}]{Maller2009}
+\textsc{Maller, R.~A., G.~M{\"u}ller, and A.~Szimayer} (2009):
+  \enquote{Ornstein--Uhlenbeck processes and extensions,} \emph{Handbook of
+  financial time series}, 421--437.
+
+\bibitem[\protect\citeauthoryear{of~Governors of~the Federal
+  Reserve~System}{of~Governors of~the Federal Reserve~System}{2023}]{fred_10}
+\textsc{of~Governors of~the Federal Reserve~System, U.~B.} (2023):
+  \enquote{Term Premium on a 10 Year Zero Coupon Bond [THREEFYTP10],} Retrieved
+  from FRED, Federal Reserve Bank of St. Louis;
+  https://fred.stlouisfed.org/series/THREEFYTP10.
+
+\bibitem[\protect\citeauthoryear{Welch, Bishop et~al.}{Welch
+  et~al.}{1995}]{Welch1995}
+\textsc{Welch, G., G.~Bishop, et~al.} (1995): \enquote{An introduction to the
+  Kalman filter,} .
+
+\end{thebibliography}
