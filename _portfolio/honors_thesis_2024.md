@@ -6,4 +6,6 @@ collection: portfolio
 
 I had the incredible opportunity to present my project at the 2024 National Collegiate Research Conference (NCRC), hosted by the Harvard Conference on Undergraduate Research (HCURA). There, from January 19-21, I presented a poster summarizing on my progress and up-to-date findings. You can find my poster [here](https://github.com/dkposthumus/danielposthumus.github.io/blob/master/_portfolio/honors-thesis_2024/poster_posthumus_final.pdf).
 
+An adaptation of my presentation at NCRC 2024 can be found [here](https://www.youtube.com/watch?v=z25RdS8lM0U).
+
 *Note: I want to thank my Thesis Advisor, Professor Ranjan Shrestha, for his tremendous support and counsel throughout my project. I also want to thank the William & Mary Charles Center, Economics Department, and 1693 Scholarship for their support of my travels for this project.*
