@@ -1,3 +1,3 @@
 Why do the Lakers get more free throws than everyone else?
 
-Hello.
+Check
