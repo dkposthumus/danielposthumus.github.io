@@ -7,7 +7,7 @@ main:
     url: /writing_samples/
         
   - title: "Blog Posts"
-    url: /blog/
+    url: /posts/
     
   - title: "CV"
     url: /cv/
