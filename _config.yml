@@ -309,3 +309,7 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+# Set 'excerpt_separator' to an empty string
+excerpt_separator: ""
+
