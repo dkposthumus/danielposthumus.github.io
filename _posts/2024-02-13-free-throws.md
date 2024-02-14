@@ -6,4 +6,4 @@ tags:
     - economics
     - basketball
 ---
-![Distribution of FTA Diff](team_data/fta_diff_dist.png)
+![Distribution of FTA Diff](/Users/danielposthumus/danielposthumus.github.io/_posts/free_throw_2024/team_data/fta_diff_dist.png)
