@@ -26,7 +26,7 @@ $$
 \mathbf{Y}_{it} = \beta_1 \mathbf{X}_{it} + \mu_t + \beta_0 + \epsilon_{it}
 $$
 
-Where $\mathbf{Y}_{it}$ is the free throw attempt difference, $\mathbf{X}_{it}$ is a vector of control variables, and $\mu_t$ is the team fixed-effects term. The coefficients attached to the series of dummy variables for each team may be interpreted as estimates for $\mu_t$. I've plotted those estimates below:
+Where $\mu_t$ is the team fixed-effects term. The coefficients attached to the series of dummy variables for each team may be interpreted as estimates for $\mu_t$. I've plotted those estimates below:
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/team_fe_size.png)
 
 *Note: data is taken from [BasketballReference](https://www.basketball-reference.com/).*
