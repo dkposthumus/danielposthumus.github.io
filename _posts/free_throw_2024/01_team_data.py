@@ -115,3 +115,15 @@ plt.xticks(rotation=45, ha='right')  # Rotate x-axis labels for better readabili
 plt.tight_layout()
 plt.savefig(image_path + '/team_fe_size.png')
 plt.show()
+# Let's create a basic plot of ALL the games' free throw distributions:
+plt.figure(figsize=(10,6))
+sns.kdeplot(data=data['fta_diff'], linewidth=5)
+# let's add a vertical line for the Lakers' average fta
+lakers_average_fta_diff = master_team[master_team['team_name']=='lal']['fta_diff'].mean()
+plt.axvline(x=lakers_average_fta_diff,color='red',linestyle='--', label='Lakers Avg FTA Diff')
+plt.xlabel('Free Throw Attempt Difference')
+plt.ylabel('Density')
+plt.title('Kernel Density Estimation of Free Throw Attempt Difference for Top 10 Teams in FTA Diff')
+plt.legend(title='Team')
+plt.savefig(image_path + '/total_kdp.png')
+plt.show()

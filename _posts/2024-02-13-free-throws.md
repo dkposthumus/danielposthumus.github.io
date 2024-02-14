@@ -14,13 +14,7 @@ It makes sense to start answering this question with the basics: do some teams e
 ![distribution of fta diff]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/fta_diff_dist.png)
 Clearly, some teams get more free throws than others, even when controlling for game specific-effects (which I do by taking the difference between a team's and their opponent's free throw attempts).
 
-However, there can be a lot of reasons why this discrepancy exists: teams can be more physically dominant in the paint, where shooting fouls are likelier to occur, or they could just shoot more in the paint. Running with the same dataset plotted above, I ran a simple OLS regression, with the fta_diff as the dependent variable, and a series of independent variables, including (for both the team and its opponent): 
-- Field Goal Attempts (FGA)
-- Field Goal Percentage (FG%)
-- Share of Field Goal Attempts that were 3 Pointers (3PA_FGA)
-- Offensive Rebounds (ORB)
-- Visitor Status (visitor)
-I also include a dummy variable for every time, essentially running a fixed-effects model, with the following specification for game $i$ and team $t$:
+However, there can be a lot of reasons why this discrepancy exists: teams can be more physically dominant in the paint, where shooting fouls are likelier to occur, or they could just shoot more in the paint. Running with the same dataset plotted above, I ran a simple OLS regression, with the fta_diff as the dependent variable, and a series of covariates, with the following specification for game $i$ and team $t$:
 
 $$
 \mathbf{Y}_{it} = \beta_1 \mathbf{X}_{it} + \mu_t + \beta_0 + \epsilon_{it}
@@ -28,6 +22,11 @@ $$
 
 Where $\mu_t$ is the team fixed-effects term. The coefficients attached to the series of dummy variables for each team may be interpreted as estimates for $\mu_t$. I've plotted those estimates below:
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/team_fe_size.png)
+We can immediately see three teams get the largest 'bonus', other factors being controlled--the Los Angeles Lakers,  the New York Knicks, and the Philadelphia 76ers. Unsurprisingly, these are three large big-market teams--the Knicks are the 2nd-most valuable NBA franchise, the Lakers the 3rd, and Philadelphia the 9th, [as of December 2023](https://www.nbcdfw.com/news/sports/nba/listing-the-most-valuable-nba-franchises-after-mark-cuban-sells-stake-of-mavericks/3399123/).
+
+Lastly, let's create a distribution of Free Throw Attempt differences and then use the negative log likelihood function to determine the likelihood of the Lakers, Knicks, and 76ers achieving their average free thow attempt differential.
+![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/total_kdp.png)
+
 
 *Note: data is taken from [BasketballReference](https://www.basketball-reference.com/).*
 
