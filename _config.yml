@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Daniel Posthumus"
 title_separator          : "-"
-excerpt_separator        : " "
+excerpt_separator        : "\n\n"
 name                     : &name "Daniel Posthumus"
 description              : &description "personal description"
 url                      : https://dkposthumus.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
