@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import statsmodels.api as sm
 # let's set the new working directory:
 new_directory = '/Users/danielposthumus/danielposthumus.github.io/_posts/free_throw_2024'
 os.chdir(new_directory)
@@ -34,14 +35,18 @@ for team in teams:
     # Let's generate two differential variables: first in free throw attempts and then in personal fouls
     team_2024['fta_diff'] = team_2024['FTA'] - team_2024['FTA_opp']
     team_2024['pf_diff'] = team_2024['PF'] - team_2024['PF_opp']
-
+    # Now let's generate a dummy variable for each of these teams:
+    team_2024[f'{team}'] = 1 
     team_var_to_drop = ['Rk', 'Date', 'Unnamed: 3', 'W/L']
     team_2024 = team_2024.drop(columns=team_var_to_drop)
     # Finally, let's append this to a master dataframe:
     all_teams_data.append(team_2024)
 # Let's concatenate into a true master dataset
 master_team = pd.concat(all_teams_data, ignore_index=True)
-
+# We have a quick problem -- the dummy variables we coded for each team 
+# are missing where they shoudl be 0 -- so let's fill that in right now:
+for team in teams:
+    master_team[f'{team}'] = master_team[f'{team}'].fillna(0)
 # Now let's create a series of histograms to represent the distribution of free throw attempts:
 # Let's set up the matplotlib figures
 plt.figure(figsize=(12,6))
@@ -85,3 +90,28 @@ plt.show()
 
 # Let's check what variables we can work with:
 print(list(master_team.columns))
+# We want to create a couple of variables, e.g. the share of FGAs that were 3-pointers:
+master_team['3pa_fga'] = master_team['3PA']/master_team['FGA']
+master_team['3pa_fga_opp'] = master_team['3PA_opp']/master_team['FGA_opp']
+lhs_reg = ['win', 'FGA', 'FGA_opp', 'FG%', 'FG%_opp', '3pa_fga', '3pa_fga_opp', 'ORB', 'ORB_opp', 'BLK', 'BLK_opp', 'visitor', "atl", "bos", "brk", "cho", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okc", "orl", "phi", "pho", "por", "sac", "sas", "tor", "uta", "was"]
+# Now let's run the regression, first defining our variables:
+X = master_team[lhs_reg]
+y = master_team['fta_diff']
+print(X.isnull().sum())
+# Add constant
+X = sm.add_constant(X) 
+model = sm.OLS(y, X).fit()
+print(model.summary())
+# Now let me extract the coefficients and their names:
+coeff_names = ["atl", "bos", "brk", "cho", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okc", "orl", "phi", "pho", "por", "sac", "sas", "tor", "uta", "was"]
+coefficients_to_plot = model.params[coeff_names]
+# Now let's plot them:
+plt.figure(figsize=(10,6))
+plt.bar(coeff_names, coefficients_to_plot)
+plt.xlabel('Variable')
+plt.ylabel('Coefficient')
+plt.title('Coefficients of OLS Regression')
+plt.xticks(rotation=45, ha='right')  # Rotate x-axis labels for better readability
+plt.tight_layout()
+plt.savefig(image_path + '/team_fe_size.png')
+plt.show()

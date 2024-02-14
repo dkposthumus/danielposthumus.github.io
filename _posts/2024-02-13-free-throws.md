@@ -20,8 +20,15 @@ However, there can be a lot of reasons why this discrepancy exists: teams can be
 - Share of Field Goal Attempts that were 3 Pointers (3PA_FGA)
 - Offensive Rebounds (ORB)
 - Visitor Status (visitor)
-I also include a dummy variable for each of those top 10 teams outlined above--the coefficient attached to this dummy variable will suggest the team effect on free throw attempt differentials, controlling for their style of play in the game.
+I also include a dummy variable for every time, essentially running a fixed-effects model, with the following specification for game $i$ and team $t$:
+
+$\mathbf{Y}_it = \beta_1 \mathbf{X}_{it} + \mu_t + \beta_0 + \epsilon_{it}$
+
+Where $\mathbf{Y}_{it}$ is the free throw attempt difference, $\mathbf{X}_{it}$ is a vector of control variables, and $\mu_t$ is the team fixed-effects term. The coefficients attached to the series of dummy variables for each team may be interpreted as estimates for $\mu_t$. I've plotted those estimates below:
+![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/team_fe_size.png)
 
 *Note: data is taken from [BasketballReference](https://www.basketball-reference.com/).*
-[Code]()
-[Data]()
+
+[Code](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_posts/free_throw_2024/code)
+
+[Data](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_posts/free_throw_2024)
