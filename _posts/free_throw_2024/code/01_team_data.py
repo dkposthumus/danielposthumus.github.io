@@ -84,4 +84,3 @@ plt.savefig(image_path + '/fta_diff_dist.png')
 plt.show()
 
 # Let's check what variables we can work with:
-print(list(master_team.columns))
