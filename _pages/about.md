@@ -13,3 +13,5 @@ I am currently a senior at the College of William & Mary, double-majoring in Eco
 I live in Williamsburg, VA--before living in the United States, I had lived in Japan for a total of 12 years. There I developed a passion for understanding the divergence in economic growth between countries, the relationship between economics and human rights, and international politics in general. When not studying, I enjoy playing tennis, playing the piano, drawing, and reading political history.
 
 Feel free to contact me at [danielposthumus335@gmail.com](mailto:danielposthumus335@gmail.com).
+
+<!--more-->
