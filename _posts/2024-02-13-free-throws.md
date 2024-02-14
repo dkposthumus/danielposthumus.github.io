@@ -6,4 +6,4 @@ tags:
     - economics
     - basketball
 ---
-![distribution of fta diff]({{ site.url }}{{ site.baseurl }}//images/fta_diff_dist.png)
+![distribution of fta diff]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/fta_diff_dist.png)

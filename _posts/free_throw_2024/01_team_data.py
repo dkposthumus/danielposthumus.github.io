@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 # let's set the new working directory:
 new_directory = '/Users/danielposthumus/danielposthumus.github.io/_posts/free_throw_2024'
 os.chdir(new_directory)
+# now let's define the variable we're using to save all images:
+image_path = '/Users/danielposthumus/danielposthumus.github.io/images/blog-free-throw'
 # Create the list we're going to use to set up our loop:
 teams = ["atl", "bos", "brk", "cho", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okc", "orl", "phi", "pho", "por", "sac", "sas", "tor", "uta", "was"]
 # Let's create an empty list that we're going to fill with each team's dataframe:
@@ -78,5 +80,5 @@ plt.ylabel('Density')
 plt.title('Kernel Density Estimation of Free Throw Attempt Difference for Top 10 Teams in FTA Diff')
 plt.legend(title='Team')
 # Let's save this plot:
-plt.savefig('images/fta_diff_dist.png')
+plt.savefig(image_path + '/fta_diff_dist.png')
 plt.show()
