@@ -119,12 +119,13 @@ plt.show()
 plt.figure(figsize=(10,6))
 sns.kdeplot(data=data['fta_diff'], linewidth=5)
 # let's add a vertical line for the Lakers' average fta
-lakers_average_fta_diff = master_team[master_team['team_name']=='lal']['fta_diff'].mean()
-plt.axvline(x=lakers_average_fta_diff,color='purple',linestyle='--', label='Lakers Avg FTA Diff')
-sixers_average_fta_diff = master_team[master_team['team_name']=='phi']['fta_diff'].mean()
-plt.axvline(x=sixers_average_fta_diff,color='blue',linestyle='--',label='Sixers Avg FTA Diff')
-knicks_average_fta_diff = master_team[master_team['team_name']=='nyk']['fta_diff'].mean()
-plt.axvline(x=knicks_average_fta_diff,color='orange',linestyle='--',label='Knicks Avg FTA Diff')
+team_colors = {'lal': 'purple', 'phi': 'blue', 'nyk': 'orange'}
+team_labels = {'lal': 'Lakers', 'phi': 'Sixers', 'nyk': 'Knicks'}
+team_averages = {}
+for team in ['lal', 'phi', 'nyk']:
+    team_average = master_team[master_team['team_name']==team]['fta_diff'].mean()
+    team_averages[team] = team_average
+    plt.axvline(x=team_average, color=team_colors[team], linestyle='--', label=f'{team_labels[team]} Avg FTA Diff')
 plt.xlabel('Free Throw Attempt Difference')
 plt.ylabel('Density')
 plt.title('Kernel Density Estimation of Free Throw Attempt Difference for Top 10 Teams in FTA Diff')
