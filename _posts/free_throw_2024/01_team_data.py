@@ -78,5 +78,5 @@ plt.ylabel('Density')
 plt.title('Kernel Density Estimation of Free Throw Attempt Difference for Top 10 Teams in FTA Diff')
 plt.legend(title='Team')
 # Let's save this plot:
-plt.savefig('team_data/fta_diff_dist.png')
+plt.savefig('images/fta_diff_dist.png')
 plt.show()
