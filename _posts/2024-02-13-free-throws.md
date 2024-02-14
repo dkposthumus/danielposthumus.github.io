@@ -6,5 +6,4 @@ tags:
     - economics
     - basketball
 ---
-
-Why do the Lakers get more free throws than everyone else?
+![Distribution of FTA Diff](team_data/fta_diff_dist.png)

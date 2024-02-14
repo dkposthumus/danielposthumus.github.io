@@ -5,7 +5,9 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-
+# let's set the new working directory:
+new_directory = '/Users/danielposthumus/danielposthumus.github.io/_posts/free_throw_2024'
+os.chdir(new_directory)
 # Create the list we're going to use to set up our loop:
 teams = ["atl", "bos", "brk", "cho", "chi", "cle", "dal", "den", "det", "gsw", "hou", "ind", "lac", "lal", "mem", "mia", "mil", "min", "nop", "nyk", "okc", "orl", "phi", "pho", "por", "sac", "sas", "tor", "uta", "was"]
 # Let's create an empty list that we're going to fill with each team's dataframe:
@@ -66,10 +68,15 @@ print(top_10_data.head())
 plt.figure(figsize=(12, 6))
 # Create distribution curves for each group in the DataFrame
 for team_name, data in top_10_data.groupby('team_name'):
+    if team_name == 'lal':  # Bold curve for the LA Lakers
+        sns.kdeplot(data=data['fta_diff'], label=team_name, linewidth=5)
+    else:
         sns.kdeplot(data=data['fta_diff'], label=team_name)
 # Add labels and legend
 plt.xlabel('Free Throw Attempt Difference')
 plt.ylabel('Density')
-plt.title('Kernel Density Estimation of Free Throw Attempt Difference for Top 10 Teams')
+plt.title('Kernel Density Estimation of Free Throw Attempt Difference for Top 10 Teams in FTA Diff')
 plt.legend(title='Team')
 plt.show()
+# Let's save this plot:
+plt.savefig('team_data/fta_diff_dist.png')
