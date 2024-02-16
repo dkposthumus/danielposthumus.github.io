@@ -6,6 +6,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
+import scipy.stats as stats
+from sklearn.preprocessing import MinMaxScaler
+from scipy.stats import beta 
+from scipy.stats import norm
 # let's set the new working directory:
 new_directory = '/Users/danielposthumus/danielposthumus.github.io/_posts/free_throw_2024'
 os.chdir(new_directory)
@@ -62,15 +66,16 @@ plt.ylabel('Density')
 plt.title('Kernel Density Estimation of Free Throw Attempt Difference by Team')
 plt.legend(title='Team')
 plt.show()
-
-# There's too much going on in this graph. Let's restrict it to the top 10 teams by average free throw differential:
-# Calculate the average fta_diff for each team
-avg_fta_diff = master_team.groupby('team_name')['fta_diff'].mean()
-# let's select the top 10 teams with the highest average fta_diff:
-top_10_teams = avg_fta_diff.nlargest(10).index
-# Filter the original DataFrame to include only data for the top 10 teams
-top_10_data = master_team[master_team['team_name'].isin(top_10_teams)]
-print(top_10_data.head())
+# let's now restrict this graph to only the top 10 teams by free throw attempt difference:
+# First, calculate the average free throw attempts for each team
+team_avg_fta = master_team.groupby('team_name')['fta_diff'].mean()
+# Then, ensure team_avg_fta is a Series object
+if not isinstance(team_avg_fta, pd.Series):
+    raise ValueError("team_avg_fta should be a pandas Series object.")
+# Now, sort the teams based on average free throw attempts and select the top 10
+top_10_teams = team_avg_fta.sort_values(ascending=False).head(10)
+# Now, create a sub-dataframe containing only the top 10 teams
+top_10_data = master_team[master_team['team_name'].isin(top_10_teams.index)].copy()
 # Set up the matplotlib figure
 plt.figure(figsize=(12, 6))
 # Create distribution curves for each group in the DataFrame
@@ -132,3 +137,93 @@ plt.title('Kernel Density Estimation of Free Throw Attempt Difference for Top 10
 plt.legend(title='Team')
 plt.savefig(image_path + '/total_kdp.png')
 plt.show()
+# let's replot that as a histogram; the problem is that we can't have all 30 teams included; let's restrict it to the top 10.
+# However, to fit the beta distribution, ALL observations of the fta_diff must be in the interval [0,1]; this is pretty simple via standardizing with min-max:
+# Extract the 'fta_diff' column from the master data
+fta_diff = master_team['fta_diff']
+# Create a MinMaxScaler object
+scaler = MinMaxScaler()
+# Fit the scaler to your data and transform it
+scaled_fta_diff = scaler.fit_transform(fta_diff.values.reshape(-1, 1))
+# Add the scaled variable back to the DataFrame
+master_team['scaled_fta_diff'] = scaled_fta_diff
+master_team['scaled_fta_diff'] = master_team['scaled_fta_diff'] + 0.001
+print(np.min(master_team['scaled_fta_diff']))
+print(np.max(master_team['scaled_fta_diff']))
+# Now let's check about missing observations:
+# Display the first few rows of the missing values count
+pd.set_option('display.max_rows', None)
+print(master_team.isnull().sum())
+# Some variable called 'Unnamed: 24' is the problem, so let's drop it
+master_team = master_team.drop(columns=['Unnamed: 24'])
+print(master_team.isnull().sum())
+# Now let's plot a histogram of these scaled values w/averages:
+plt.figure(figsize=(8,4))
+team_colors = {'lal': 'purple', 'phi': 'blue', 'nyk': 'orange'}
+team_labels = {'lal': 'Lakers', 'phi': 'Sixers', 'nyk': 'Knicks'}
+team_averages = {}
+plt.hist(master_team['scaled_fta_diff'])
+plt.ylabel(r'Number of Games')
+plt.xlabel(r'FTA Difference ($\theta$)')
+plt.axvline(master_team['scaled_fta_diff'].mean(), ls='--', c='k', label='Mean Avg FTA (Scaled)')
+for team in ['lal', 'phi', 'nyk']:
+    team_average = master_team[master_team['team_name']==team]['scaled_fta_diff'].mean()
+    team_averages[team] = team_average
+    plt.axvline(x=team_average, color=team_colors[team], linestyle='--', label=f'{team_labels[team]} Avg FTA Diff (Scaled)')
+plt.legend()
+plt.tight_layout()
+plt.savefig(image_path + '/total_hist.png')
+plt.show()
+# Now let's fit a beta distribution:
+res = stats.beta.fit(master_team['scaled_fta_diff'].values, floc=0, fscale=1.1)
+# Print alpha and beta parameters of the beta distribution
+print('alpha: %0.3f, beta: %0.3f of beta distribution' % (res[0], res[1]))
+# Now let's plot the histogram w/the mean lines and the prior distribution curve
+plot_theta = np.arange(0,1,.02)
+prior_prob = np.array([beta(res[0], res[1], loc=0, scale=1.1).pdf(i) for i in plot_theta])
+
+fig, ax = plt.subplots(1,1, figsize=(8,4))
+ax.hist(master_team['scaled_fta_diff'], density=True)
+ax.axvline(master_team['scaled_fta_diff'].mean(), ls='--', c='k',
+            label='Mean ('+str(master_team['scaled_fta_diff'].mean().round(3))+')')
+ax.plot(plot_theta, prior_prob, label="Prior Distribution")
+ax.set_yticks([])
+ax.set_ylabel(r'Pr($\theta$)')
+ax.set_xlabel(r'FTA Difference($\theta$)')
+ax.legend()
+sns.despine(offset=[3.,0.])
+plt.tight_layout()
+plt.savefig(image_path + '/total_prior_dist.png')
+plt.show()
+
+# Now let's analytically derive the posterior; let's run a loop for the three teams of interest:
+three_teams = ['lal', 'nyk', 'phi']
+for team in three_teams:
+    # Define the normal likelihood function
+    def normal_likelihood(data, mean, std):
+        likelihood = norm.pdf(data, loc=mean, scale=std)
+        return likelihood
+    # Calculate mean and standard deviation of the observed data
+    # Filter the DataFrame to select only observations where team_name is 'team'
+    team_data = master_team[master_team['team_name'] == f'{team}']
+    # Calculate mean and standard deviation of the filtered data
+    mean_team = team_data['scaled_fta_diff'].mean()
+    std_team = team_data['scaled_fta_diff'].std()
+    # Compute the likelihood function using the observed data and its parameter
+    # Adjust the range of values for team_likelihood to match the length of prior_prob
+    team_likelihood = normal_likelihood(np.linspace(0, 1, len(prior_prob)), mean_team, std_team)
+    # Compute the unnormalized posterior by multiplying the likelihood with the prior
+    team_unnormalized_posterior = team_likelihood * prior_prob
+    # Normalize the posterior to obtain the actual posterior distribution
+    team_posterior = team_unnormalized_posterior / np.sum(team_unnormalized_posterior)
+    # Plot the prior, likelihood, and posterior distributions
+    plt.figure(figsize=(10, 5))
+    plt.plot(plot_theta, prior_prob, label='Prior (Beta)')
+    plt.plot(plot_theta, team_likelihood, label='Likelihood (Normal)')
+    plt.plot(plot_theta, team_posterior, label='Posterior')
+    plt.xlabel('Parameter Value')
+    plt.ylabel('Density')
+    plt.title(f'Prior, Likelihood, and Posterior Distributions for {team}')
+    plt.legend()
+    plt.savefig(image_path + f'/posterior_{team}.png')
+    plt.show()

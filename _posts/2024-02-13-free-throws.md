@@ -24,11 +24,16 @@ Where $\mu_t$ is the team fixed-effects term. The coefficients attached to the s
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/team_fe_size.png)
 We can immediately see three teams get the largest 'bonus', other factors being controlled--the Los Angeles Lakers,  the New York Knicks, and the Philadelphia 76ers. Unsurprisingly, these are three large big-market teams--the Knicks are the 2nd-most valuable NBA franchise, the Lakers the 3rd, and Philadelphia the 9th, [as of December 2023](https://www.nbcdfw.com/news/sports/nba/listing-the-most-valuable-nba-franchises-after-mark-cuban-sells-stake-of-mavericks/3399123/).
 
-Lastly, let's create a distribution of Free Throw Attempt differences and then use the negative log likelihood function to determine the likelihood of the Lakers, Knicks, and 76ers achieving their average free thow attempt differential.
-![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/total_kdp.png)
+Lastly, let's analytically calculate the posteriors for the Knicks, Lakers, and Phialdelphia given the distribution of free throw attempt differences among the teams in the league. Free throw differential has a unique feature: its distribution is guaranteed to be symmetric, since for every team that has a $+x_1$ free throw differential for game 1, another team has a $-x_i$ free throw differential for game 1. Additionally, we know the data will be centered on 0. In order to fit my model to a beta distribution, however, all observations of my variable must lie in the interval (0,1)--thus, I merely scale all observations of free throw attempt difference to a (0,1) scale. Therefore the ~0.5 mean seen below matches our expectations of a distribution centered around 0.
+![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/total_prior_dist.png)
+Below we can see the likelihood and posterior estimates with the prior model:
+![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_lal.png)
+![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_nyk.png)
+![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_phi.png)
 
 
-*Note: data is taken from [BasketballReference](https://www.basketball-reference.com/).*
+
+*Data is taken from [BasketballReference](https://www.basketball-reference.com/).*
 
 [Code](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_posts/free_throw_2024/code)
 
