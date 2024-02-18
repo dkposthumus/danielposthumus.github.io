@@ -197,6 +197,8 @@ for team in teams_interest:
     plt.plot(x_prior, norm.pdf(x_prior, prior_mean, prior_std), label='Prior', color='blue')
     plt.hist(team_data, bins=20, density=True, alpha=0.5, color='green', label=f'Observed Values for {team}')
     plt.plot(team_posterior, norm.pdf(team_posterior, posterior_mean_team, posterior_std_team), label='Posterior', color='red')
+    team_average = master_team[master_team['team_name']==team]['fta_diff'].mean()
+    team_averages[team] = team_average
     plt.axvline(x=team_average, color=team_colors[team], linestyle='--', label=f'{team_labels[team]} Avg FTA Diff')
     plt.title(f'Posterior, Prior, and Likelihood Curves for {team} Team')
     plt.xlabel('FTA Difference')
