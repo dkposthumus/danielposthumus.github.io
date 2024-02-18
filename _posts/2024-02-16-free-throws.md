@@ -28,13 +28,21 @@ The fitted normal curve represents my prior information about the distribution o
 $$
 P(\theta | \text{prior}) = \frac{P(\text{prior} | \theta) P(\theta)}{P(\text{prior})}
 $$
-Next, I use the normal likelihood estimator to find the likelihood estimates and posteriors for the Lakers, Knicks, and Sixers.
+Where $\theta$ is our outcome of interest--the free throw attempt difference for a particular team. Next, I use the normal likelihood estimator to find the likelihood estimates and posteriors for the Lakers, Knicks, and Sixers.
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_lal.png)
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_nyk.png)
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_phi.png)
-Now let's plot a distribution of the samples from each of these posterior curves (I took 5,000 samples from each):
+These curves are interesting, but they largely tell us something we already knew or at the very least suspected: the Lakers, Knicks, and Sixers all receive a much greater advantage in free throw attempts than the rest of the league, and the distribution of their observed values dominates the prior (hence the steepness of the posterior curves).Another way to visualize the posterior curves is to sample repeatedly from them and to plot the distributions for these samples. Thus, I sample from the posterior 5,000 times to create the following histograms:
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_total_hist.png)
-Clearly, the Lakers' distribution of free throw attempt differences skews more heavily to the right than the Knicks of Sixers.
+Clearly, the Lakers' distribution of free throw attempt differences skews more heavily to the right than the Knicks of Sixers, both of which are centered around means significantly to the right of 0, the league average. Again, this is nothing particularly revelatory.
+
+However, using the posterior curves crafted above, we can conduct [analysis](https://stephens999.github.io/fiveMinuteStats/summarize_interpret_posterior.html) such as finding the posterior probability or we can find Bayesian confidence intervals. For this analysis, let's focus on the Lakers, who appear to receive the most significant advantage in free throw attempts. 
+
+Let's begin with calculating the posterior probability that $\theta_{\text{lal}} > 0$, since 0 is the center of the league's total distribution of $\theta$. The probability, as we might expect from the graphs above, is 100%. What about greater than one standard deviation above 0? The probability of that is merely 0.12%, and the probability of it being greater than two standard deviations above 0 is 0%. Finally, the posterior probability that the Lakers shoot more free throws than the Knicks' mean is 96.84% and for the Sixers' mean is 99.78%. Now let's compute a Bayesian confidence interval; at a 90% confidence level, the interval is (3.50,7.48) and at 95%, the interval is (3.06,7.85). Clearly, we can say *with a great deal of confidence* that the Lakers have a greater free throw attempt advantage than the rest of the league.
+
+This approach suggests that there *is* some obvious advantage for big-market teams, in particular for the Lakers, Knicks, and Sixers. However, there are some shortcomings to this approach: the team data I've used for my analysis includes only the most basic information about shooting patterns--in fact, it only tells me whether a field goal attempt was a 2-pointer or a 3-pointer. And although in my regression analysis above, I included rebounds as a proxy for a team's physical domination of the paint, that's an imperfect measure. Ideally, I would be able to control for the distribution of 2-point field attempts by distance from the basket--the assumption being that shoots within 0-3 feet of the basketball are much likelier to draw fouls than shoots attempted 16 feet from the basket. Unfortunately, that data is only available for individual shooters.
+
+Thus, in a future blog post I'll hone in on individual players; if I look at individual players' careers who played for the Lakers as well as other NBA teams, I can control for shooting patterns (specifically the distance from their basket of their average 2 point field attempt), age, and winning percentage and attempt to isolate a possible 'Los Angeles Premium' for free throw attempts. I will also derive the posterior curves for selected current Los Angeles players (most importantly Lebron James and Anthony Davis), using their past seasons' free throw attempt data as prior and their free throw attempts while in a Lakers uniform as the parameter of interest. 
 
 *Data is taken from [Basketball Reference](https://www.basketball-reference.com/).*
 

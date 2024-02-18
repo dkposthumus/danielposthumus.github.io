@@ -231,3 +231,34 @@ plt.ylabel('Probability Density')
 plt.legend()
 plt.savefig(image_path + '/posterior_total_hist.png')
 plt.show()
+
+# Now let's calculate posterior probabilities for the lakers:
+# Calculate the posterior probability that the Lakers have a positive free throw attempt difference
+# Index of the Lakers in the teams of interest list
+lakers_index = teams_interest.index('lal')
+# Get posterior samples for the Lakers
+lakers_posterior_samples = posterior_samples_all_teams[lakers_index]
+# Calculate the posterior probability that the Lakers have a positive free throw attempt difference
+posterior_probability_positive = np.mean(lakers_posterior_samples > 0)
+print("Posterior Probability that the Lakers have a Positive Free Throw Attempt Difference:", posterior_probability_positive)
+print(prior_std)
+posterior_probability_one_std = np.mean(lakers_posterior_samples > prior_mean + prior_std)
+print("Posterior Probability that the Lakers have a Free Throw Attempt Difference More than One Standard Deviation Above 0:", posterior_probability_one_std)
+posterior_probability_two_std = np.mean(lakers_posterior_samples > prior_mean + 2*prior_std)
+print("Posterior Probability that the Lakers have a Free Throw Attempt Difference More than Two Standard Deviations Above 0:", posterior_probability_two_std)
+posterior_probability_nyk = np.mean(lakers_posterior_samples > master_team[master_team['team_name']=='nyk']['fta_diff'].mean())
+print("Posterior Probability that the Lakers have a Free Throw Attempt Difference More than the New York Knicks:", posterior_probability_nyk)
+posterior_probability_phi = np.mean(lakers_posterior_samples > master_team[master_team['team_name']=='phi']['fta_diff'].mean())
+print("Posterior Probability that the Lakers have a Free Throw Attempt Difference More than the Philadelphia Sixers:", posterior_probability_phi)
+# Calculate the 5th and 95th percentiles of the posterior samples for the Lakers
+lower_bound_90 = np.percentile(lakers_posterior_samples, 5)
+upper_bound_90 = np.percentile(lakers_posterior_samples, 95)
+print("Bayesian Confidence Interval (90%) for Lakers' Posterior Curve:")
+print("Lower Bound:", lower_bound_90)
+print("Upper Bound:", upper_bound_90)
+# now let's calculate the 95% confidence interval:
+lower_bound_95 = np.percentile(lakers_posterior_samples, 2.5)
+upper_bound_95 = np.percentile(lakers_posterior_samples, 97.5)
+print("Bayesian Confidence Interval (95%) for Lakers' Posterior Curve:")
+print("Lower Bound:", lower_bound_95)
+print("Upper Bound:", upper_bound_95)
