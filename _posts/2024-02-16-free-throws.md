@@ -22,15 +22,19 @@ Where $\mu_t$ is the team fixed-effects term. The coefficients attached to the s
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/team_fe_size.png)
 Clearly, three teams get the largest 'bonus', other factors being controlled for: the Los Angeles Lakers,  the New York Knicks, and the Philadelphia 76ers. Unsurprisingly, these are three very significant big-market teams--the Knicks are the 2nd-most valuable NBA franchise, the Lakers the 3rd, and the Sixers the 9th, [as of December 2023](https://www.nbcdfw.com/news/sports/nba/listing-the-most-valuable-nba-franchises-after-mark-cuban-sells-stake-of-mavericks/3399123/).
 
-Let's look at our team data with one more method (I'll address individual-level data in a later post) by analytically calculating the posteriors for the Knicks, Lakers, and Phialdelphia given the distribution of free throw attempt differences among the teams in the league. Free throw differential has a unique feature: its distribution is guaranteed to be symmetric, since for every team that has a $+y_1$ free throw differential for game 1, another team has a $-y_1$ free throw differential for game 1. Additionally, we know the data will be centered on 0. In order to fit my model to a beta distribution, however, all observations of my variable must lie in the interval (0,1.1)--thus, I scale all observations of FTA difference to a (0,1) scale. Therefore the 0.501 mean seen below matches our expectations of a distribution centered around 0.
-![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/total_prior_dist.png)
+Let's conclude by employing Bayesian econometrics to derive the posterior curve for each of these teams; these curves suggest possible estimates of the 'true' value of a team's free throw attempts. We combine the knowledge given to us by our priors--in this case, the *total* distribution of free throw difference. Because of the nature of the data about free throw difference, I fit it to a normal curve: 1) free throw difference will always be centered on 0, for a complete dataset of teams and games, 2) free throw differences closer to 0 are much likelier than free throw differences away from 0, and 3) free throw difference will follow a *unimodal* (rather than binomial, for example) distribution. Here I've ploted the total distribution, the fitted normal curve, and the means for my three teams of interest:
+![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/total_hist.png)
+The fitted normal curve represents my prior information about the distribution of free throw attempt differences. Next, I estimate the posterior curve yielded by Bayes' Theorem:
+$$
+P(\theta | \text{prior}) = \frac{P(\text{prior} | \theta) P(\theta)}{P(\text{prior})}
+$$
 Next, I use the normal likelihood estimator to find the likelihood estimates and posteriors for the Lakers, Knicks, and Sixers.
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_lal.png)
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_nyk.png)
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_phi.png)
+Now let's plot a distribution of the samples from each of these posterior curves (I took 5,000 samples from each):
+![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_total_hist.png)
 
 *Data is taken from [Basketball Reference](https://www.basketball-reference.com/).*
 
-[Code](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_posts/free_throw_2024/code)
-
-[Data](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_posts/free_throw_2024)
+[Code and Data](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_posts/free_throw_2024)
