@@ -25,9 +25,11 @@ Clearly, three teams get the largest 'bonus', other factors being controlled for
 Let's conclude by employing Bayesian econometrics to derive the posterior curve for each of these teams; these curves suggest possible estimates of the 'true' value of a team's free throw attempts. We combine the knowledge given to us by our priors--in this case, the *total* distribution of free throw difference. Because of the nature of the data about free throw difference, I fit it to a normal curve: 1) free throw difference will always be centered on 0, for a complete dataset of teams and games, 2) free throw differences closer to 0 are much likelier than free throw differences away from 0, and 3) free throw difference will follow a *unimodal* (rather than binomial, for example) distribution. Here I've ploted the total distribution, the fitted normal curve, and the means for my three teams of interest:
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/total_hist.png)
 The fitted normal curve represents my prior information about the distribution of free throw attempt differences. Next, I estimate the posterior curve yielded by Bayes' Theorem:
+
 $$
 P(\theta | \text{prior}) = \frac{P(\text{prior} | \theta) P(\theta)}{P(\text{prior})}
 $$
+
 Where $\theta$ is our outcome of interest--the free throw attempt difference for a particular team. Next, I use the normal likelihood estimator to find the likelihood estimates and posteriors for the Lakers, Knicks, and Sixers.
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_lal.png)
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_nyk.png)
