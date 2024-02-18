@@ -34,6 +34,7 @@ Next, I use the normal likelihood estimator to find the likelihood estimates and
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_phi.png)
 Now let's plot a distribution of the samples from each of these posterior curves (I took 5,000 samples from each):
 ![team fixed effects sizes]({{ site.url }}{{ site.baseurl }}//images/blog-free-throw/posterior_total_hist.png)
+Clearly, the Lakers' distribution of free throw attempt differences skews more heavily to the right than the Knicks of Sixers.
 
 *Data is taken from [Basketball Reference](https://www.basketball-reference.com/).*
 
