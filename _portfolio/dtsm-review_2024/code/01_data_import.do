@@ -18,7 +18,7 @@ set linesize 80
 macro drop _all
 
 ****************************************************************************************Set Global Macros              ****************************************************************************************
-global workspace "~/danielposthumus.github.io/_portfolio/dtsm_review_2023"
+global workspace "~/danielposthumus.github.io/_portfolio/dtsm-review_2024"
 	global graphics "$workspace/graphics"
 	global code "$workspace/code"
 	global data "$workspace/data"

@@ -18,7 +18,7 @@ set linesize 80
 macro drop _all
 
 ****************************************************************************************Set Global Macros              ****************************************************************************************
-global workspace "~/danielposthumus.github.io/_portfolio/dtsm_review_2023"
+global workspace "~/danielposthumus.github.io/_portfolio/dtsm-review_2024"
 	global graphics "$workspace/graphics"
 	global code "$workspace/code"
 	global data "$workspace/data"
@@ -31,13 +31,13 @@ cd $data
 	use master, clear
 cd $graphics
 * First, let's just plot a basic time-series with all of our term premia:
-tsline fit_prem_01 fit_prem_03 fit_prem_05 fit_prem_10, title("Term Premia") ytitle("Percent") xtitle("") tlabel(, format(%tdCY)) legend(label(1 "1-Year") label(2 "3-Year") label(3 "5-Year") label(4 "10-Year") size(small))
+tsline fit_prem_01 fit_prem_03 fit_prem_05 fit_prem_10, ytitle("Percent") xtitle("") tlabel(, format(%tdCY)) legend(label(1 "1-Year") label(2 "3-Year") label(3 "5-Year") label(4 "10-Year"))
 	graph export term_premia.png, replace
 * Next, let's plot the decomposition of our 3-year bond, incorporating 3 time-series: 1) the basic yield, 2) the expected short rate, and the term premium.: 
-tsline _3_yr eshort_03 fit_prem_03, title("3-Year Bond Decomposition") ytitle("Percent") xtitle("") tlabel(, format(%tdCY)) legend(label(1 "3-Year Treasury Bond Yield") label(2 "Expected 3-Year Short Rate") label(3 "3-Year Term Premium") size(small))
+tsline _3_yr eshort_03 fit_prem_03, ytitle("Percent") xtitle("") tlabel(, format(%tdCY)) legend(label(1 "3-Year Treasury Bond Yield") label(2 "Expected 3-Year Short Rate") label(3 "3-Year Term Premium"))
 	graph export 03_decomp.png, replace
 * Now let's do the same thing for the 10-year bond:
-tsline _10_yr eshort_10 fit_prem_10, title("10-Year Bond Decomposition") ytitle("Percent") xtitle("") tlabel(, format(%tdCY)) legend(label(1 "10-Year Treasury Bond Yield") label(2 "Expected 10-Year Short Rate") label(3 "10-Year Term Premium") size(small))
+tsline _10_yr eshort_10 fit_prem_10, ytitle("Percent") xtitle("") tlabel(, format(%tdCY)) legend(label(1 "10-Year Treasury Bond Yield") label(2 "Expected 10-Year Short Rate") label(3 "10-Year Term Premium"))
 	graph export 10_decomp.png, replace
 /*
 log close

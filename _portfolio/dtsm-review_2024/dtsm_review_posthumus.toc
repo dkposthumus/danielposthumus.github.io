@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}The Evolution of the DTSM and Estimation Techniques}{3}{section.2}%
+\contentsline {section}{\numberline {3}Kim and Wright's Derivation of the Model}{5}{section.3}%
+\contentsline {section}{\numberline {4}Empirical Results}{8}{section.4}%
+\contentsline {section}{\numberline {5}Challenges and Conclusion}{9}{section.5}%
+\contentsline {section}{\numberline {6}Figures}{11}{section.6}%
