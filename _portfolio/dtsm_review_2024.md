@@ -11,4 +11,4 @@ In this paper, I examine one structural model that has been used to answer quest
 
 [Replication Code](https://github.com/dkposthumus/danielposthumus.github.io/tree/master/_portfolio/dtsm-review_2024/code)
 
-*Note: This project was initially completed as the final paper for my undergraduate economics course, "Empirical Macroeconomics" with Professor Nathaniel Throckmorton.*
+*This project was initially completed as the final paper for my undergraduate economics course, "Empirical Macroeconomics" with Professor Nathaniel Throckmorton.*
