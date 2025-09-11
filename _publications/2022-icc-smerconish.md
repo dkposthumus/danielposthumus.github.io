@@ -6,4 +6,9 @@ excerpt: 'As Russian forces continue their assault on Ukraine, there is growing 
 date: 2022-04-28
 venue: 'Smerconish.com'
 paperurl: 'https://www.smerconish.com/exclusive-content/the-international-criminal-court-is-a-court-of-last-resort/.'
+authors:
+    - Kelebogile Zvobgo
+    - Daniel Posthumus
+    - Nathaniel Liu
+    - Zoha Siddiqui
 ---

@@ -6,4 +6,9 @@ excerpt: 'On Feb. 28, Karim Khan, chief prosecutor at the International Criminal
 date: 2022-03-04
 venue: 'Foreign Policy'
 paperurl: 'https://foreignpolicy.com/2022/03/04/icc-investigation-russia-ukraine-putin-war-crimes/.'
+authors:
+    - Kelebogile Zvobgo
+    - Daniel Posthumus
+    - Nathaniel Liu
+    - Zoha Siddiqui
 ---

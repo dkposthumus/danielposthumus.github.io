@@ -6,4 +6,6 @@ excerpt: 'On the evening of Thursday, November 4, 2021, after the Iowa City Trut
 date: 2022-05-11
 venue: 'The Pulitzer Center'
 paperurl: 'https://pulitzercenter.org/stories/search-facilitator-further-delays-iowa-truth-and-reconciliation-commission.'
+authors:
+    - Daniel Posthumus
 ---
