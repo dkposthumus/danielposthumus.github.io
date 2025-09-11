@@ -1,98 +1,90 @@
----
-layout: archive
-title: "CV"
-permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+# Daniel Posthumus
+
+**Phone:** (+1) 757-585-5124
+**Email:** [danpost@stanford.edu](mailto:danpost@stanford.edu)
+
 ---
 
-{% include base_path %}
+## Education
 
-Education
-======
-* B.A., College of William & Mary, 2024 \
-Economics and Government Double Major
+**Stanford University**
+*Predoctoral Research Fellow; un‑matriculated graduate student*
+**2024–2025**
+*Relevant/ongoing coursework:* Graduate Industrial Organization (IO), Graduate Political Economy, Real Analysis, Probability Theory for Causal Inference
 
-Work experience
-======
-2020 - 2024: **Research Fellow**<br>
-International Justice Lab (Global Research Institute)<br>
-College of William & Mary
-  * Co-authored a peer-reviewed article published in the International Journal of Transitional Justice, “Democratizing Truth”, introducing the first-ever comprehensive dataset of US truth commissions.
-  * Presented ongoing paper “Proposing Truth” at the American Political Science Association’s (APSA) 2023 Annual Meeting.
+**College of William & Mary**
+**B.A., Economics and Government (Double Major)** — **GPA: 3.95**
+**2020–2024**
+*Relevant coursework:* Bayesian Econometrics, Advanced Empirical Macroeconomics, Advanced International Trade, Applied Linear Algebra, Proof‑Based Linear Algebra, Ordinary Differential Equations, Multivariable Calculus, Foundations of Math, Econometrics
 
+---
 
-Summer 2023: **Research Assistant**<br>
-National Team for the Acceleration of Poverty Reduction (TNP2K)<br>
-Jakarta, Indonesia
-  * Cleaned data from the Indonesian Family Life Survey (IFLS) using Stata, worked with senior Indone- sian government economists on issues related to development and poverty, and conducted literature reviews on development and economics issues.
-  * Proofread written materials such as book chapters, lectures, and abstracts prepared by Sudarno Sumato.
+## Research Experience
 
+**Pre‑Doctoral Research Fellow** — Stanford Institute for Economic Policy Research (SIEPR)
+**August 2024 – Present**
 
-Spring 2023: **Intern**<br>
-Executive Office of the President, Council of Economic Advisers<br> 
-Washington, DC
-  * Conducted microeconomic and macroeconomic analysis with Stata and Microsoft Excel, using datasets derived from a Bloomberg Terminal, Haver, and the Trade Data Monitor (TDM).
-  * Assisted in preparing memos focusing on international economics topics targeted to Council Member. Topics of note included trade, capital markets, and monetary policy.
-  * Presented on a variety of topics in both informal and formal contexts, including the future of Japanese monetary policy and international currency markets.
+* Assisted Professor Neale Mahoney and visiting PhD student Ryan Cummings in developing a comprehensive model of gasoline supply in California.
+* Provided analytical and quantitative expertise to the California Energy Commission (CEC)’s Department of Petroleum Market Oversight (DPMO). Investigated the effect of hypermart entry on price competition, asymmetric price cycling and Edgeworth cycles, and estimated a demand system in California by leveraging confidential government quantity and supply data, proprietary Oil and Price Information Systems (OPIS) price data, and public traffic data.
+* Co‑authored with Jared Bernstein a SIEPR brief on debt sustainability and built a stochastic model aimed at informing policymakers of the risk of debt explosion. Developing novel historical work decomposing manufacturing employment and productivity gains via shift‑share methods using Quarterly Census of Employment and Wages (QCEW) and Current Population Survey (CPS).
 
+**Research Fellow** — International Justice Lab (Global Research Institute), William & Mary
+**August 2020 – October 2023**
 
-Fall 2022: **Teaching Asssistant**<br>
-Principles of Microeconomics<br>
-William & Mary Economics Department
-  * Assisted Professor Ranjan Shrestha in Fall 2022 by conducting regular office hours and study sessions and proctoring exams while aiding students master the foundations of microeconomics.
-  
+* Co‑authored a peer‑reviewed article published in the *International Journal of Transitional Justice*, “Democratizing Truth,” introducing the first‑ever comprehensive dataset of U.S. truth commissions.
+* Presented ongoing paper “Proposing Truth” at the American Political Science Association’s (APSA) 2023 Annual Meeting.
 
-Summer 2022: **Human Rights Fellow**<br>
-La Comisión Provincial por La Memoria<br>
-La Plata, Argentina
-  * Wrote biographies about the last military dictatorship’s victims in Argentina, conducting qualitative research through the Comisión’s archives and interviews.
-  * Lived and worked in La Plata, Argentina, immersing myself in an entirely Spanish-language setting.
+---
 
+## Professional Experience
 
-Summer 2022: **Intern**<br>
-Senator Mark Warner<br>
-Washington, DC
-  * Assisted Senator Warner’s through constituent calls and policy work in a myriad of ways. Tasks com- pleted include a memo on the effect of Russia’s invasion of Ukraine on global gas markets, exhaustive analysis of appropriations’ allocations within the State of Virginia.
+**Intern** — Executive Office of the President, Council of Economic Advisers, Washington, DC
+**January – May 2023**
 
+* Conducted microeconomic and macroeconomic analysis with Stata and Microsoft Excel, using datasets derived from a Bloomberg Terminal, Haver, and the Trade Data Monitor (TDM).
 
-Summer 2021: **Intern**<br>
-Majority Staff, House Committee on Education and Labor<br>
-Washington, DC
-  * Drafted member statements and talking points, wrote rebuttals to amendments, participated in phone calls with Congressional leadership and the White House, prepared policy memos, and handled mail.
-  
-Skills
-======
-**Data Analysis**
-  * Stata
-  * R
-  * MATLAB
-  * Microsoft Excel
-  
-**Languages**
-  * Spanish (Fluent)
-  * German (Intermediate)
-  * Japanese (Novice)
+**Teaching Assistant** — Principles of Microeconomics, William & Mary Economics Department
+**August – December 2022**
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Awards and Honors
-======
-**William & Mary 1693 Program Scholar**
-* Most selective academic scholarship at the College of William & Mary. Full room, board, and tuition for four years.
-* Received $5,000 in research funding that was used to travel to Indonesia to work as a Research Assistant with TNP2K. 
+**Human Rights Fellow** — La Comisión Provincial por la Memoria (Provincial Commission for Memory), La Plata, Argentina
+**July – August 2022**
 
-**Member, Phi Beta Kappa**
-* Received Ann Callahan Chappel Award, given to the most outstanding William & Mary PBK initiate in the fall. The award includes a $12,000 scholarship.
-* Selected as member of Alpha Chapter of Phi Beta Kappa (PBK).
+* Wrote biographies about victims of the last military dictatorship in Argentina, conducting qualitative research through the Commission’s archives and interviews.
 
-**Ross L. and Marian Y. Goble Scholar**
-* Merit-based scholarship awarded by the William & Mary Economics Department.
+**Congressional Internships**
+**2021 – 2022**
 
-**Member, Pi Sigma Alpha** 
-* The United States' only national political science honor society.  
+* Intern, Senator Mark Warner, Washington, DC
+* Intern, Majority Staff, House Committee on Education and Labor, Washington, DC
+
+---
+
+## Honors & Awards
+
+* 1693 Program Scholar (full tuition; \$5k research grant for RA in Indonesia), **2020–2024**
+* Phi Beta Kappa; Ann Callahan Chappel Award (\$12k scholarship), **2022**
+* Ross L. & Marian Y. Goble Scholar (Economics Department merit award), **2023**
+* Pi Sigma Alpha (Political Science Honor Society), **2023**
+
+---
+
+## Skills
+
+**Programming:** Python, Stata, SQL, Git
+**Languages:** Spanish (Fluent), German (Intermediate), Japanese (Novice)
+
+---
+
+## Publications
+
+### Peer‑Reviewed Publications
+
+* Posthumus, Daniel and Kelebogile Zvobgo. “Democratizing Truth: An Analysis of Truth Commissions in the United States.” *International Journal of Transitional Justice* **15**(3), 2022: 510–532. [https://doi.org/10.1093/ijtj/ijab029](https://doi.org/10.1093/ijtj/ijab029)
+
+### Selected Public Writing & Policy Briefs
+
+* Bernstein, J., Posthumus, et al. “The US Budget Math is Getting Dangerous.” *Stanford Institute for Economic Policy Research (SIEPR) Brief*, July 2025. [https://siepr.stanford.edu/publications/policy-brief/us-budget-math-looking-dangerous](https://siepr.stanford.edu/publications/policy-brief/us-budget-math-looking-dangerous)
+* Zvobgo, K., Daniel Posthumus, et al. “Could Putin Actually Face Accountability at the ICC?” *Foreign Policy*, March 4, 2022. [https://foreignpolicy.com/2022/03/04/icc-investigation-russia-ukraine-putin-war-crimes/](https://foreignpolicy.com/2022/03/04/icc-investigation-russia-ukraine-putin-war-crimes/)
+* Zvobgo, K. and Daniel Posthumus. “The ICJ Ordered Russia to Halt Military Operations in Ukraine: What Comes Next?” *The Washington Post*, March 25, 2022. [https://www.washingtonpost.com/politics/2022/03/25/icj-russia-ukraine-international-law/](https://www.washingtonpost.com/politics/2022/03/25/icj-russia-ukraine-international-law/)
+
+---
