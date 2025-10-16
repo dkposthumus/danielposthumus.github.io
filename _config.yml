@@ -103,7 +103,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : 
   orcid            : 
   pinterest        :
   soundcloud       :
@@ -116,6 +116,8 @@ author:
   xing             :
   youtube          :
   wikipedia        :
+  linkedin         : "https://www.linkedin.com/in/daniel-posthumus-5a92691b2/"
+  substack         : "https://substack.com/@danielposthumu2"
 
 
 # Reading Files
