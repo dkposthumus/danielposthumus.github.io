@@ -82,7 +82,7 @@ analytics:
 # Site Author
 author:
   name             : "Daniel Posthumus"
-  avatar           : "profile.jpg"
+  avatar           : "profile.png"
   bio              : "Pre-Doctoral Fellow with Stanford Institute for Economic Policy Research (SIEPR)"
   location         : "Palo Alto, CA"
   employer         :
@@ -116,7 +116,7 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-  linkedin         : "https://www.linkedin.com/in/daniel-posthumus-5a92691b2/"
+  linkedin         : "daniel-posthumus-5a92691b2"
   substack         : "https://substack.com/@danielposthumu2"
 
 
