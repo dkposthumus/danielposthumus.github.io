@@ -3,9 +3,8 @@ title: "What We Can Learn From the Long History of Manufacturing Employment in t
 collection: publications
 pub_type: policy
 date: 2025-09-30
-venue: 'International Journal of Transitional Justice'
 venue: 'Stanford Institute for Economic Policy Research (SIEPR)'
-paperurl: 'https://drive.google.com/file/d/1QQvAtj8Q-3XfzZiAx88R483Sulf62Avi/view'
+paperurl: 'https://siepr.stanford.edu/publications/working-paper/what-we-can-learn-long-history-manufacturing-employment-us'
 authors: 
     - Jared Bernstein
     - Daniel Posthumus
