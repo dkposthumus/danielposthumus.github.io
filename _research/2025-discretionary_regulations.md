@@ -1,5 +1,5 @@
 ---
-title: "Measuring Discretionary Housing Authority: A Novel Structuring of San FranciscoPlanning Commission Meeting Minutes"
+title: "Measuring Discretionary Housing Authority: A Novel Structuring of San Francisco Planning Commission Meeting Minutes (In-Progress)"
 collection: publications
 pub_type: working_paper
 authors: 
