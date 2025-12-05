@@ -181,13 +181,16 @@ collections:
   teaching:
     output: true
     permalink: /:collection/:path/
-  publications:
-    output: false
+  research:
+    output: true
     permalink: /:collection/:path/
   portfolio:
     output: true
     permalink: /:collection/:path/
   talks:
+    output: true
+    permalink: /:collection/:path/
+  short_writing:
     output: true
     permalink: /:collection/:path/
 
@@ -246,6 +249,24 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _research
+  - scope:
+      path: ""
+      type: research
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: false
+  # _short_writing
+  - scope:
+      path: ""
+      type: short_writing
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: false
 
 # Sass/SCSS
 sass:
@@ -258,7 +279,6 @@ permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
 timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins
 plugins:
