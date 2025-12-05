@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Short-Form Writing"
-permalink: /short_writing/
+title: "Public Writing"
+permalink: /public_writing/
 author_profile: true
 classes: wide
 ---

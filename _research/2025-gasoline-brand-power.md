@@ -1,13 +1,9 @@
 ---
-title: "Democratizing Truth"
+title: "Brand Power in California’s Retail Gasoline Market (In-Progress)"
 collection: publications
 pub_type: working_paper
-date: 2021-11-01
-venue: 'International Journal of Transitional Justice'
-paperurl: 'https://academic.oup.com/ijtj/article-abstract/15/3/510/6406461.'
+paperurl: 'https://drive.google.com/file/d/1IckYMuRAlrmlbzDNxJRlCV9RgJNdmnMJ/view?usp=sharing.'
 authors: 
-    - Kelebogile Zvobgo
     - Daniel Posthumus
-citation: 'Daniel Posthumus, Kelebogile Zvobgo, Democratizing Truth: An Analysis of Truth Commissions in the United States. International Journal of Transitional Justice. Volume 15, Issue 3, November 2021. Pages 510–532.'
-abstract: 'Over the past half-century, numerous transitional justice (TJ) measures have been implemented globally. While much research has examined different TJ modalities in the aftermath of authoritarian rule and armed conflict, a growing body of work recognizes TJ outside of political transitions. We study a noteworthy export from transitional to non-transitional settings: truth commissions. Building on scholarship on TJ in established democracies, we introduce new quantitative data from the Varieties of Truth Commissions Project on truth commissions in an overlooked but significant case: the United States. The data captures 20 past, present and proposed official US truth commissions, most of them at the subnational level. Though their mandates vary considerably, they all address racial injustice, with an emphasis on anti-Indigenous and anti-Black violence. We elaborate on trends in the data and discuss the implications for unfolding efforts to reckon with historical and contemporary racial violence and injustice in the United States.'
+abstract: 'Gasoline is physically homogeneous, yet retail prices differ systematically across brands. I study California’s gasoline market, where retail prices have outpaced those in the rest of the United States since 2015 — a phenomenon known as the “Mystery Gasoline Surcharge”. Over the same period, a wedge has emerged and widened between “premium” brands’ and other stations’ prices, despite little evidence of higher marginal costs or increased market consolidation. Using proprietary station-level data on prices and quantities in California from 2011 to 2023, I estimate a baseline nested logit discrete-choice model of station choice. I instrument for price using an interaction of spot price movements and within-market variation in distance to supply infrastructure. Estimated substitution is substantially stronger within station types — branded, hypermart, and unbranded — than across them. Estimating the model separately for pre- and post-2015 periods, I find evidence that consumer price sensitivity declined markedly after 2015, while nest-level preferences strengthened. Under a benchmark static single-product Bertrand pricing assumption, the demand estimates imply near-zero markups before 2015 and average markups of a little over $1 per gallon after 2015. Consistent with observed brand premia, estimated willingness-to-pay (WTP) is higher for premium brands and cross-brand WTP rankings are stable over the sample period. I conclude by proposing and outlining a richer demand framework to address limitations of the nested logit.'
 ---

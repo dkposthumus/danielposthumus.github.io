@@ -67,7 +67,7 @@ classes: wide
 
 {% assign wp = site.research | where: "pub_type", "working_paper" | sort: "order" %}
 {% if wp and wp.size > 0 %}
-## Working Papers
+## Working Papers and Works-in-Progress
 
 {% for pub in wp %}
 <div class="pub-item">
