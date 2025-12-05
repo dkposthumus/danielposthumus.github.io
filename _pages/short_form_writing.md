@@ -17,7 +17,7 @@ classes: wide
 
 ## Policy Writing
 
-{% assign policy = site.short_writings | where: "pub_type", "policy" | sort: "order" %}
+{% assign policy = site.short_writing | where: "pub_type", "policy" | sort: "order" %}
 {% for pub in policy %}
 <p class="pub-item">
   {% if pub.authors %}
@@ -31,7 +31,7 @@ classes: wide
 
 ## Public Writing
 
-{% assign public = site.short_writings | where: "pub_type", "public" | sort: "order" %}
+{% assign public = site.short_writing | where: "pub_type", "public" | sort: "order" %}
 {% for pub in public %}
 <p class="pub-item">
   {% if pub.authors %}
